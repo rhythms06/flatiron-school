@@ -1,4 +1,4 @@
-_Hey, it's Sakib, an instructor at Flatiron School. Here are some of my notes._
+Hey, it's Sakib, an instructor at Flatiron School. Here are some of my notes.
 
 # Phase 1
 
