@@ -1,4 +1,4 @@
-Hey, it's Sakib, an instructor at Flatiron School. Here are some of my notes.
+Hey, it's Sakib - an instructor at Flatiron School. Here are some of my lecture notes.
 
 # Phase 1: JavaScript
 
