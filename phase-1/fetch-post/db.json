@@ -1,0 +1,34 @@
+{
+  "dogs": [
+    {
+      "dogName": "Luca",
+      "dogBreed": "German Shepherd",
+      "id": 1
+    },
+    {
+      "dogName": "Lola",
+      "dogBreed": "Giant Schnauzer",
+      "id": 2
+    }
+  ],
+  "cats": [
+    {
+      "catName": "Stanley",
+      "catBreed": "Tabby",
+      "id": 1
+    },
+    {
+      "catName": "Gunnar",
+      "catBreed": "American Shorthair",
+      "id": 2
+    }
+  ],
+  "users": [],
+  "robots": [
+    {
+      "robotName": "C8-09S100K",
+      "robotType": "Human Assistant",
+      "id": 9000
+    }
+  ]
+}
