@@ -1,8 +1,8 @@
 Hey, it's Sakib, an instructor at Flatiron School. Here are some of my notes.
 
-# Phase 1
+# Phase 1: JavaScript
 
-## [DOM Events (TaskLister)](phase-1/dom-events)
+## [Events (TaskLister)](phase-1/dom-events)
 _Use event listeners to add and remove tasks from a to-do list._
 
 ## [GET (GoT Books App)](phase-1/fetch-get)
