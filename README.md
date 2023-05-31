@@ -10,3 +10,7 @@ _Retrieve a list of Game of Thrones books by invoking `fetch()`._
 
 ## [POST (Users, Dogs, Cats, and Robots)](phase-1/fetch-post)
 _Add users (or dogs, or cats, or robots) to a local database with the help of `json-server` and `fetch()`._
+
+## [Mock Code Challenge (Ramen Rater)](phase-1/mock-ramen)
+_Manage the metadata of your favorite ramen dishes with the help of `GET` requests, event listeners, and DOM manipulation._
+
