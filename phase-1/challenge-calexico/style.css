@@ -1,0 +1,105 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Questrial', sans-serif;
+}
+
+header {
+    background-color: #414141;
+    padding: 20px;
+}
+
+header img {
+    height: 50px;
+    width: auto;
+}
+
+#menu {
+    width:25%;
+    height: 100%;
+    margin-left: 20px;
+    margin-top: 20px;
+    display:block;
+}
+
+#menu h2 {
+    font-size: 3em;
+}
+
+#container {
+    display:flex;
+    height:100%;
+}
+
+#menu span {
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+#menu span:not(:last-child) { 
+    margin-bottom: .5em;  
+}
+
+#menu span {
+    float: left;
+    clear: left;
+}
+
+#menu span:hover {
+    color: red;
+    cursor: pointer;
+}
+
+#dish {
+    position: relative;
+    margin-top: 20px;
+}
+
+#dish-text {
+    position: absolute;
+    top:0px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    width:40%;
+    height:auto;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+#dish-name {
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+#dish-description {
+    font-size: 1.25em;
+}
+
+input[type=submit] {
+    border:0px;
+    background:white;
+    font-size: 1em;
+    border: 1px solid black;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+input[type=text] {
+    width: 150px;
+    font-size: 1em;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding:10px;
+}
+
+.icon {
+    width:2em;
+    height:auto;
+    vertical-align: middle;
+}
+
+form {
+    display:flex;
+    height: 30px;
+}

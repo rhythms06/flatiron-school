@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+        <script defer src="./index.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="./assets/calexico-img-logo.svg"/>
+    </head>
+    <body>
+       <header>
+           <img src="./assets/calexico-img-logo.svg" />
+           <img src="./assets/calexico-logo.png"/>
+       </header>
+       <div id="container">
+            <section id="menu">
+                <h2>Menu</h2>
+                <div id="menu-items">
+                    <!-- Add your menu items here! -->
+                </div>
+            </section>
+
+            <section id="dish">
+                <!-- All the dish details are in here! -->
+                <img id="dish-image" src=""/>
+                <div id="dish-text">
+                    <h3 id="dish-name"></h3>
+                    <p id="dish-description"></p>
+                    <h3 id="dish-price"></h3>
+                </div>
+                
+                <h3>
+                    Number in Cart: 
+                    <span id="number-in-cart">0</span>
+                </h3>
+                <form id="cart-form">
+                    <input id="cart-amount" type="text" placeholder="Number to add..."/>
+                    <input type="submit" value="Add to Cart"></input>
+                </form>
+                
+            </section>
+        </div>
+    </body>
+</html>

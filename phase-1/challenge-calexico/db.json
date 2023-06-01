@@ -1,0 +1,44 @@
+{
+  "menu": [
+    {
+      "id": 1,
+      "name": "Chips & Guacamole",
+      "image": "./assets/calexico-guac.webp",
+      "description": "House-made tortilla chips with fresh daily made guacamole",
+      "price": 13,
+      "number_in_bag": 0
+    },
+    {
+      "id": 2,
+      "name": "Carne Asada Burrito",
+      "image": "./assets/calexico-carne-asada-burrito.webp",
+      "description": "Grilled marinated steak, Jack and cheddar cheese, crispy tortilla strips, and chili crema.",
+      "price": 14,
+      "number_in_bag": 0
+    },
+    {
+      "id": 3,
+      "name": "Chipotle Pork Bowl",
+      "image": "./assets/calexico-chipotle-pork-bowl.webp",
+      "description": "Slow-cooked chipotle pork, pickled red onions, Jack and cheddar cheese, pico de gallo, and sour cream.",
+      "price": 13,
+      "number_in_bag": 1
+    },
+    {
+      "id": 4,
+      "name": "Fried Chicken Taco",
+      "image": "./assets/calexico-fried-chicken-taco.webp",
+      "description": "Fried chicken, bacon, avocado, spicy pico de gallo, and chipotle buttermilk sauce. Served on a toasted flour tortilla.",
+      "price": 6.5,
+      "number_in_bag": 1
+    },
+    {
+      "id": 5,
+      "name": "Pollo Asado Quesadilla",
+      "image": "./assets/calexico-pollo-asado-quesadilla.webp",
+      "description": "Grilled marinated chicken.",
+      "price": 13,
+      "number_in_bag": 0
+    }
+  ]
+}
