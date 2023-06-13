@@ -17,7 +17,7 @@ _Manage the metadata of your favorite ramen dishes with the help of `GET` reques
 ## [Challenge (Calexico)](phase-1/challenge-calexico)
 _Create a storefront for Calexico with the help of `GET` requests, `PATCH` requests, DOM events, and DOM manipulation!_
 
-# Phase 2: React
+# Phase 2: React | [Slides](phase-2/slides)
 
 ## [State and Events (My Cool Mall)](phase-2/state-events)
 _Sell my TV and spatula with the help of components, props, and state._
