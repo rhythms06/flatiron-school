@@ -22,6 +22,6 @@ _Create a storefront for Calexico with the help of `GET` requests, `PATCH` reque
 ## [State and Events (My Cool Mall)](phase-2/state-events)
 _Sell my TV and spatula with the help of components, props, and state._
 
-## [Forms and Controlled Components (Luck of the Screen)](phase-2/forms)
-_Generate lucky moviegoing numbers._
+## [Forms (Luck of the Screen)](phase-2/forms)
+_Generate lucky moviegoing numbers with the help of forms and controlled components._
 
