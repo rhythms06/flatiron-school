@@ -34,3 +34,9 @@ _Available in [Keynote](phase-2/forms/slides/forms.key), [PowerPoint](phase-2/fo
 - [Luck of the Screen](phase-2/forms/code)
 _Generate lucky moviegoing numbers with the help of forms and controlled components._
 
+## [Routing](phase-2/routing)
+- [Slides](phase-2/routing/slides)
+_Available in [Keynote](phase-2/routing/slides/routing.key), [PowerPoint](phase-2/routing/slides/routing.pptx), and [PDF](phase-2/routing/slides/routing.pdf) formats._
+- [Sakib's Tea House](phase-2/routing/code)
+_Browse and add to my tea collection with the help of components, props, state, forms, routes, and styling._
+
