@@ -24,19 +24,20 @@ _Create a storefront for Calexico with the help of `GET` requests, `PATCH` reque
 
 ## [State](phase-2/state/)
 - [Slides](phase-2/state/slides)
-_Available in [Keynote](phase-2/state/slides/state.key), [PowerPoint](phase-2/state/slides/state.pptx), and [PDF](phase-2/state/slides/state.pdf) formats._
+_Available in [Keynote](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/state/slides/state.key
+), [PowerPoint](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/state/slides/state.pptx), and [PDF](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/state/slides/state.pdf) formats._
 - [My Cool Mall](phase-2/state/code)
 _Sell my TV and spatula with the help of components, props, and state._
 
 ## [Forms](phase-2/forms)
 - [Slides](phase-2/forms/slides)
-_Available in [Keynote](phase-2/forms/slides/forms.key), [PowerPoint](phase-2/forms/slides/forms.pptx), and [PDF](phase-2/forms/slides/forms.pdf) formats._
+_Available in [Keynote](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/forms/slides/forms.key), [PowerPoint](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/forms/slides/forms.pptx), and [PDF](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/forms/slides/forms.pdf) formats._
 - [Luck of the Screen](phase-2/forms/code)
 _Generate lucky moviegoing numbers with the help of forms and controlled components._
 
 ## [Routing](phase-2/routing)
 - [Slides](phase-2/routing/slides)
-_Available in [Keynote](phase-2/routing/slides/routing.key), [PowerPoint](phase-2/routing/slides/routing.pptx), and [PDF](phase-2/routing/slides/routing.pdf) formats._
+_Available in [Keynote](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/routing/slides/routing.key), [PowerPoint](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/routing/slides/routing.pptx), and [PDF](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/routing/slides/routing.pdf) formats._
 - [Sakib's Tea House](phase-2/routing/code)
 _Browse and add to my tea collection with the help of components, props, state, forms, routes, and styling._
 
