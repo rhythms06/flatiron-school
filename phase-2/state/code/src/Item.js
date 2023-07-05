@@ -17,12 +17,12 @@ export default function Item({ item: { name, price } }) {
       <h2>{name} for only ${price}!</h2>
       <p>
         {/* We're using this <span> as a button, so it'll be the tag that receives our state-updating-callback-function as a prop. */}
-        <span onClick={() => { setIsInCart(!isInCart) }}>
+        <button onClick={() => { setIsInCart(!isInCart) }}>
           {/* On load: {true ? "Add to Cart" : "Remove from Cart"} a.k.a. Add to Cart */}
           <strong>{!isInCart ? "Add to Cart" : "Remove from Cart"}</strong>
           {/* After click and re-render: {false ? "Add to Cart" : "Remove from Cart"} a.k.a. Remove from Cart */}
           {/* After a second click and re-render: {true ? "Add to Cart" : "Remove from Cart"} a.k.a. Add to Cart */}
-        </span>
+        </button>
         {/* Some manual spacing, nothing to see here... */}
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         {/* A second span element whose textContent depends on isInCart. */}

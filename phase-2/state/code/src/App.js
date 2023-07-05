@@ -10,7 +10,7 @@ Core Deliverables
 
 */
 
-// Some default CSS from `create-next-app`
+// Some default CSS from `create-react-app`
 import './App.css';
 import Products from './Products';
 
@@ -32,8 +32,8 @@ const items = [
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div>
+      <header>
         <h1>My Cool Mall</h1>
       </header>
       <br/>
