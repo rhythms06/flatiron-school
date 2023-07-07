@@ -15,7 +15,7 @@ _Retrieve a list of Game of Thrones books by invoking `fetch()`._
 _Add users (or dogs, or cats, or robots) to a local database with the help of `json-server` and `fetch()`._
 
 ## [Challenges](phase-1/challenges)
-- [Ramen Rater](phase-1/challenges/ramen-rater)
+- [Ramen Rater](phase-1/challenges/ramen)
 _Manage the metadata of your favorite ramen dishes with the help of `GET` requests, event listeners, and DOM manipulation._
 - [Calexico](phase-1/challenges/calexico)
 _Create a storefront for Calexico with the help of `GET` requests, `PATCH` requests, DOM events, and DOM manipulation!_
