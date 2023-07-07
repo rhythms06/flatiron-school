@@ -35,6 +35,10 @@ _Available in [Keynote](https://raw.githubusercontent.com/rhythms06/flatiron-sch
 - [Luck of the Screen](phase-2/forms/code)
 _Generate lucky moviegoing numbers with the help of forms and controlled components._
 
+## [Effects](phase-2/effects)
+- [Slides](phase-2/effects/slides)
+_Available in [Keynote](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/effects/slides/effects.key), [PowerPoint](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/effects/slides/effects.pptx), and [PDF](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/effects/slides/effects.pdf) formats._ 
+
 ## [Routing](phase-2/routing)
 - [Slides](phase-2/routing/slides)
 _Available in [Keynote](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/routing/slides/routing.key), [PowerPoint](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/routing/slides/routing.pptx), and [PDF](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/routing/slides/routing.pdf) formats._
