@@ -39,6 +39,12 @@ _Generate lucky moviegoing numbers with the help of forms and controlled compone
 - [Slides](phase-2/effects/slides)
 _Available in [Keynote](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/effects/slides/effects.key), [PowerPoint](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/effects/slides/effects.pptx), and [PDF](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/effects/slides/effects.pdf) formats._ 
 
+## [Fetch](phase-2/fetch)
+- [Slides](phase-2/fetch/slides)
+_Available in [Keynote](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/fetch/slides/fetch.key), [PowerPoint](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/fetch/slides/fetch.pptx), and [PDF](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/fetch/slides/fetch.pdf) formats.
+- [Chez Flatiron](phase-2/fetch/code)
+_Host and manage your own restaurant with `fetch()`._
+
 ## [Routing](phase-2/routing)
 - [Slides](phase-2/routing/slides)
 _Available in [Keynote](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/routing/slides/routing.key), [PowerPoint](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/routing/slides/routing.pptx), and [PDF](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/routing/slides/routing.pdf) formats._
