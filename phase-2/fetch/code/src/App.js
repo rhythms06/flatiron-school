@@ -141,6 +141,8 @@ export default function App() {
     // ...and then, if response.ok is true (i.e. if the DELETE was successful),
     //    use `filter` to create a new array without the removed dish, and pass that array to `setDishes`!
     .then(response => response.ok && setDishes(dishes.filter(dish => dish.id !== id)))
+    // Remember, fetch() might not always succeed; it's good practice to handle errors!
+    .catch(error => setError(error.message));
   }
 
   // Finally, let's render our app!
