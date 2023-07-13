@@ -4,7 +4,7 @@ Hey, it's Sakib - an instructor at Flatiron School. Here are some of my lecture 
 
 ## [Events](phase-1/events)
 - [TaskLister](phase-1/events/code)
-_Use event listeners to add and remove tasks from a to-do list._
+_Use event listeners to add and remove tasks to and from a to-do list._
 
 ## [GET](phase-1/get)
 - [Game of Thrones](phase-1/get/code)
