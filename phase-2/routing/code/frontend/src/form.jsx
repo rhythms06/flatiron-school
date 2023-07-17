@@ -8,7 +8,7 @@ export default function Form({ handleSubmit }) {
     const [name, setName] = useState("");
     const [price, setPrice] = useState(0);
     return (
-        <form onSubmit={handleSubmit} className="flex flex-col justify-between">
+        <form onSubmit={event => { setName(""); setPrice(0); handleSubmit(event); }} className="flex flex-col justify-between">
             <input name="name" type="text" placeholder="New Tea"
                     value={name} onChange={event => setName(event.target.value)}
                     className="px-1.5 w-28 h-6 border-2 rounded-md text-sm"
