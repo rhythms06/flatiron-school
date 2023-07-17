@@ -43,7 +43,7 @@ _Available in [Keynote](https://raw.githubusercontent.com/rhythms06/flatiron-sch
 
 ## [Fetch](phase-2/fetch)
 - [Slides](phase-2/fetch/slides)
-_Available in [Keynote](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/fetch/slides/fetch.key), [PowerPoint](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/fetch/slides/fetch.pptx), and [PDF](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/fetch/slides/fetch.pdf) formats.
+_Available in [Keynote](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/fetch/slides/fetch.key), [PowerPoint](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/fetch/slides/fetch.pptx), and [PDF](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/fetch/slides/fetch.pdf) formats._
 - [Chez Flatiron](phase-2/fetch/code)
 _Host and manage your own restaurant with `fetch()`._
 
