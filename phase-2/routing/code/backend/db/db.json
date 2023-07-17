@@ -31,19 +31,29 @@
       "price": 13
     },
     {
-      "id": "7546e3c7-5a9e-4887-86f4-ad9a2c9f5417",
-      "name": "Peppermint",
-      "price": "8"
-    },
-    {
-      "id": "1e49589b-81d5-4458-a1ec-6113806f70ae",
-      "name": "Earl Grey",
-      "price": "8"
-    },
-    {
-      "id": ":r1:",
+      "id": 7,
       "name": "Sleepytime",
-      "price": "5"
+      "price": 10
+    },
+    {
+      "id": 8,
+      "name": "Peppermint",
+      "price": 5
+    },
+    {
+      "id": 9,
+      "name": "A Great Tea",
+      "price": 7
+    },
+    {
+      "id": 10,
+      "name": "Sakib's Specialtea",
+      "price": 5
+    },
+    {
+      "id": 11,
+      "name": "A Pleasantea",
+      "price": 1
     }
   ]
 }
