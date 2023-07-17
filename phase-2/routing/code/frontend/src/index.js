@@ -5,11 +5,11 @@ by Sakib Rasul | June 23, 2023
 Core Deliverables
 1. Install React Router (a project requirement) and Tailwind CSS (an optional approach to styling).
 2. Create a root layout and two nested routes.
-  2a. Add a <nav> to the root and render the other routes in an outlet.
+   a. Add a <nav> to the root and render the other routes in an outlet.
 3. Handle errors with a custom component.
 4. GET resources from your backend, and hold them in state.
 5. Pass props down to a form with controlled inputs.
-  5a. On submit, POST to your backend, and update state.
+   a. On submit, POST to your backend, and update state.
 */
 
 // Create React App
@@ -48,7 +48,8 @@ const router = createBrowserRouter([
       {
         // ...the user visits [URL]/teas.
         path: "teas",
-        element: <Teas />
+        element: <Teas />,
+        loader: async () => fetch("http://localhost:3000/teas").then(response => response.json())
       },
       {
         // ...the user visits [URL]/about.
