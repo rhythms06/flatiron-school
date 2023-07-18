@@ -21,6 +21,8 @@ _Add users (or dogs, or cats, or robots) to a local database with the help of `j
 _Manage the metadata of your favorite ramen dishes with the help of `GET` requests, event listeners, and DOM manipulation._
 - [Calexico](phase-1/challenges/calexico)
 _Create a storefront for Calexico with the help of `GET` requests, `PATCH` requests, DOM events, and DOM manipulation!_
+- [Toy Tale](phase-1/challenges/toys)
+_Help Andy manage his toys with `GET`, `POST`, `PATCH`, and `DELETE` requests!_
 
 # Phase 2: React
 
