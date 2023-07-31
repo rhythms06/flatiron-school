@@ -26,6 +26,13 @@ _Help Andy manage his toys with `GET`, `POST`, `PATCH`, and `DELETE` requests!_
 
 # Phase 2: React
 
+## [Props](phase-2/props)
+- [Slides](phase-2/props/slides)
+_Available in [Keynote](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/props/slides/props.key
+), [PowerPoint](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/props/slides/props.pptx), and [PDF](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/props/slides/props.pdf) formats._
+- [Sakib's Boba Shop](phase-2/props/code)
+_Manage your own boba shop._
+
 ## [State](phase-2/state/)
 - [Slides](phase-2/state/slides)
 _Available in [Keynote](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/state/slides/state.key
