@@ -4,6 +4,10 @@ If you see something wrong, [you can let me know with a pull request](https://gi
 
 # Phase 1: JavaScript
 
+## [Functions](phase-1/functions)
+- [Scuber](phase-1/functions/code)
+_Help Scuber calculate distances and fares for their hyperlocal ridesharing service._
+
 ## [Events](phase-1/events)
 - [TaskLister](phase-1/events/code)
 _Use event listeners to add and remove tasks to and from a to-do list._
