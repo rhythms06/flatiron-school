@@ -44,6 +44,12 @@ _Available in [Keynote](https://raw.githubusercontent.com/rhythms06/flatiron-sch
 - [My Cool Mall](phase-2/state/code)
 _Sell my TV and spatula with the help of components, props, and state._
 
+## [Control](phase-2/control)
+- [Slides](phase-2/control/slides)
+_Available in [Keynote](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/control/slides/control.key), [PowerPoint](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/control/slides/control.pptx), and [PDF](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/control/slides/control.pdf) formats._
+- [Is This Your Card?](phase-2/control/code)
+_Control a user's card - maybe their mind, too._
+
 ## [Forms](phase-2/forms)
 - [Slides](phase-2/forms/slides)
 _Available in [Keynote](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/forms/slides/forms.key), [PowerPoint](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/forms/slides/forms.pptx), and [PDF](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/forms/slides/forms.pdf) formats._
