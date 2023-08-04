@@ -17,8 +17,10 @@ _Use event listeners to add and remove tasks to and from a to-do list._
 _Retrieve a list of Game of Thrones books by invoking `fetch()`._
 
 ## [POST](phase-1/post)
-- [Users, Dogs, Cats, and Robots](phase-1/post/code)
-_Add users (or dogs, or cats, or robots) to a local database with the help of `json-server` and `fetch()`._
+- [Slides](phase-1/post/slides)
+_Available in [Keynote](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-1/post/slides/post.key), [PowerPoint](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-1/post/slides/post.pptx), and [PDF](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-1/post/slides/post.pdf) formats._
+- [Humans, Dogs, Cats, and Robots](phase-1/post/code)
+_Add humans (or dogs, or cats, or robots) to a local database with the help of `json-server` and `fetch()`._
 
 ## [Challenges](phase-1/challenges)
 - [Ramen Rater](phase-1/challenges/ramen)

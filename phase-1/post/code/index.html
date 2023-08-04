@@ -5,11 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>JavaScript Lab</title>
+    <title>Humans, Dogs, Cats, and Robots</title>
+    <script defer src="index.js"></script>
   </head>
 
   <body>
-    <script src="index.js"></script>
+    <h1>Add a Human</h1>
+    <form style="display: flex; flex-direction: column; align-items: start; gap: 10px;">
+      <label>Name <input name="name" /></label>
+      <label>Age <input type="number" name="age" /></label>
+      <label>Job <input name="job" /></label>
+      <label>Number <input type="tel" name="number" /></label>
+      <input type="submit" value="Add Human" />
+    </form>
+    <h2>Humans</h2>
+    <ul id="humans">
+    </ul>
   </body>
 
 </html>
