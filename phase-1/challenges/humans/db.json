@@ -1,0 +1,59 @@
+{
+  "dogs": [
+    {
+      "id": 1,
+      "name": "Luca",
+      "breed": "German Shepherd"
+    },
+    {
+      "id": 2,
+      "name": "Lola",
+      "breed": "Giant Schnauzer"
+    }
+  ],
+  "cats": [
+    {
+      "id": 1,
+      "name": "Stanley",
+      "breed": "Tabby"
+    },
+    {
+      "id": 2,
+      "name": "Gunnar",
+      "breed": "American Shorthair"
+    }
+  ],
+  "humans": [
+    {
+      "name": "Sakib Rasul",
+      "age": "26",
+      "job": "Fashion Designer",
+      "id": 1
+    },
+    {
+      "name": "Chett Tiller",
+      "age": "99",
+      "job": "Janitor",
+      "id": 2
+    },
+    {
+      "name": "Larry Bonkulous",
+      "age": "34",
+      "job": "Swimmer",
+      "id": 3
+    },
+    {
+      "name": "Bob the Builder",
+      "age": "45",
+      "job": "Builder",
+      "id": 4
+    }
+  ],
+  "robots": [
+    {
+      "id": 1,
+      "name": "C8-09S100K",
+      "function": "Human Assistant"
+    }
+  ]
+}

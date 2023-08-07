@@ -23,6 +23,8 @@ _Available in [Keynote](https://raw.githubusercontent.com/rhythms06/flatiron-sch
 _Add humans (or dogs, or cats, or robots) to a local database with the help of `json-server` and `fetch()`._
 
 ## [Challenges](phase-1/challenges)
+- [Humans, Dogs, Cats, and Robots](phase-1/challenges/humans)
+_Get, add, update, and remove humans (or dogs, or cats, or robots) from and to a local database with the help of `json-server` and `fetch()`._
 - [Ramen Rater](phase-1/challenges/ramen)
 _Manage the metadata of your favorite ramen dishes with the help of `GET` requests, event listeners, and DOM manipulation._
 - [Calexico](phase-1/challenges/calexico)

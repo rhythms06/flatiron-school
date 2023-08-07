@@ -1,0 +1,2 @@
+# Code Challenge: Humans, Dogs, Cats, and Robots
+Lets a user get, add, update, and remove humans (or dogs, or cats, or robots) from and to a local database with the help of `json-server` and `fetch()`.
