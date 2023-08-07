@@ -60,7 +60,9 @@ _Generate lucky moviegoing numbers with the help of forms and controlled compone
 
 ## [Effects](phase-2/effects)
 - [Slides](phase-2/effects/slides)
-_Available in [Keynote](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/effects/slides/effects.key), [PowerPoint](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/effects/slides/effects.pptx), and [PDF](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/effects/slides/effects.pdf) formats._ 
+_Available in [Keynote](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/effects/slides/effects.key), [PowerPoint](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/effects/slides/effects.pptx), and [PDF](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/effects/slides/effects.pdf) formats._
+- [The Flatiron Archives](phase-2/effects/code)
+_GET your newspaper's articles with the help of effects._
 
 ## [Fetch](phase-2/fetch)
 - [Slides](phase-2/fetch/slides)
