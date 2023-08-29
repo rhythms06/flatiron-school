@@ -78,3 +78,6 @@ _Available in [Keynote](https://raw.githubusercontent.com/rhythms06/flatiron-sch
 - [Sakib's Tea House](phase-2/routing/code)
 _Browse and add to my tea collection with the help of components, props, state, forms, routes, and styling._
 
+## [Challenges](phase-2/challenges)
+- [Bob's Neighbors](phase-2/challenges/stores)
+_Create a database of punny store names, with the help of `GET`, `POST`, `PATCH`, `DELETE`, events, and manipulation._
