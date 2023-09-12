@@ -10,6 +10,10 @@ _An introduction to variables, types, objects, arrays, conditional statements, f
 - [Scuber](phase-1/fundamentals/scuber)
 _Calculate distances and fares for their hyperlocal ridesharing service._
 
+## [Manipulation](phase-1/manipulation)
+- [Today, Tomorrow, Forever?](phase-1/manipulation/code)
+_Modify new and existing elements on a webpage with the power of JavaScript._
+
 ## [Events](phase-1/events)
 - [TaskLister](phase-1/events/code)
 _Use event listeners to add and remove tasks to and from a to-do list._

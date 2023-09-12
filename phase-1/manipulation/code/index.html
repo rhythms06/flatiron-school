@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<head>
+ <meta lang="en" />
+ <!-- Remember to `defer` your JavaScript, so that it runs only after your DOM loads! -->
+ <script defer src="./index.js"></script> 
+</head>
+
+<!--
+The <body> element represents the content of your webpage.
+In terms of the DOM tree, the body is the root **parent** of everything on your site.
+What we write inside it here is the **static** content of our site.
+We'll use JavaScript (and sometimes CSS) to specify things that happen
+      **after** load, the **dynamic** content of our site.
+-->
+<body>
+  <!-- In this example, I want the user to see the page's title and author **on load**, -->
+  <!--    which is why it belongs here and not in `index.js`. -->
+  <h1>DOM Manipulation</h1>
+  <!-- The <address> element is used to denote a document's contact information. -->
+  <!-- In this example, <address> is a child of <body>, and <strong> is a child of <address>. -->
+  <!-- Said another way, <address> is the parent of <strong>, and <body> is the parent of <address>. -->
+  <!-- If you want some practice understanding these relationships, try drawing out this page's DOM tree! -->
+  <address>by <strong>Sakib Rasul</strong></address>
+  <div id="dates">
+    <!-- You can use an element's `id` attribute to uniquely identify it outside of `index.html`. -->
+    <p id="today">Today!</p>
+    <!-- By definition, an `id` must be unique. -->
+    <p id="tomorrow">Tomorrow.</p>
+    <!-- In other words, an `id` is a unique identifier! -->
+    <p id="forever">Forever?</p>
+    <p id="sometime"></p>
+  </div>
+</body>
