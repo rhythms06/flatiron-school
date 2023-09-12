@@ -1,12 +1,12 @@
 /*
 
-Phase 1 -> JavaScript Fundamentals
+Phase 1 -> The JavaScript Playground
 by Sakib Rasul
+Updated September 12, 2023
 Created August 21, 2023
 
 */
 
-console.log("Javascript 101, by Sakib Rasul.")
 // VARIABLES
 console.log("~~~"); // This line prints "~~~" to the console.
 console.log("VARIABLES"); // This line prints "VARIABLES" to the console.

@@ -5,12 +5,10 @@ If you see something wrong, [you can let me know with a pull request](https://gi
 # Phase 1: JavaScript
 
 ## [Fundamentals](phase-1/fundamentals)
-- [JavaScript 101](phase-1/fundamentals/code)
-_A JavaScript primer._
-
-## [Functions](phase-1/functions)
-- [Scuber](phase-1/functions/code)
-_Help Scuber calculate distances and fares for their hyperlocal ridesharing service._
+- [Playground](phase-1/fundamentals/playground)
+_An introduction to variables, types, objects, arrays, conditional statements, functions, and scopes._
+- [Scuber](phase-1/fundamentals/scuber)
+_Calculate distances and fares for their hyperlocal ridesharing service._
 
 ## [Events](phase-1/events)
 - [TaskLister](phase-1/events/code)
