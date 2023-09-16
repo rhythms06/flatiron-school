@@ -2,7 +2,7 @@ Hi, I'm Sakib - a software engineering instructor. Here are some of my notes.
 
 If you see something wrong, [you can let me know with a pull request](https://github.com/rhythms06/flatiron-school/compare). Thanks!
 
-# Phase 1: JavaScript
+# [Phase 1: JavaScript](phase-1)
 
 ## [Fundamentals](phase-1/fundamentals)
 - [Playground](phase-1/fundamentals/playground)
