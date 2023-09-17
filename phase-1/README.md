@@ -16,6 +16,20 @@ Welcome to the first phase of your coding journey! In this series, you'll learn 
 * **Best Practices**: readability, conciseness, proper naming, and documentation.
 * **JSON Server**: creating, updating, and deleting data hosted by `json-server`.
 
+### Tips & Tricks
+* JavaScript uses `camelCase` to name variables. Hyphens (`-`) are not allowed, but underscores (`_`) are.
+* `function [name]([parameters]) { [code] }` is equivalent to `const [name] = ([parameters]) => { [code] }`.
+* To iterate over an array, use `[array].forEach([callback function])`.
+* To map an array's values to a new array, use `[array].map([callback function])`.
+* To access an object's values, use `object.propertyName` or `object["propertyName"]`. This also works for accessing a form's input elements with `event.target`.
+* A function's parameters and body constitute one local scope.
+* Variables initialized in a local scope are not accessible in other local scopes, nor in the global scope.
+* Variables initialized in the global scope are accessible in all local scopes.
+* `querySelector()` takes as input a CSS selector, e.g. `"#[id]"`, `".[class]"`, and `"[tag]"`. 
+* Pass `event` into an event handler when you want to overwrite default handling.
+* Always follow a `fetch("[URL]")` with one or more `.then([callback function])` statements. The first callback function for a `GET` request should convert `response` to a usable data type or structure.
+* If you're ever unsure what data type or structure a `fetch([URL])` will return, try visiting `[URL]` in your browser.
+
 ### Grading
 
 We won't use programmatic tests to determine your score. Instead, we'll open up your website and see if we can complete the **user stories** outlined in the challenge's instructions. <ins>You must pass all of a challenge's core deliverables in order to pass the challenge as a whole.</ins> In other words, you can't make up for a core deliverable by partially or wholly passing an advanced deliverable.
