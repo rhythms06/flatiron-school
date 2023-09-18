@@ -5,7 +5,7 @@ If you see something wrong, [you can let me know with a pull request](https://gi
 # [Phase 1: JavaScript](phase-1)
 
 ## [Fundamentals](phase-1/fundamentals)
-- [Playground](phase-1/fundamentals/playground)
+- [Introduction](phase-1/fundamentals/introduction)
 _An introduction to variables, types, objects, arrays, conditional statements, functions, and scopes._
 - [Scuber](phase-1/fundamentals/scuber)
 _Calculate distances and fares for their hyperlocal ridesharing service._

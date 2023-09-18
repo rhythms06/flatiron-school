@@ -1,0 +1,44 @@
+<!--
+An HTML document is comprised of **elements**, commonly represented in one of the following ways:
+   (b) <tag>body</tag> (an opening tag, content, and a closing tag),
+   (b) <tag/> (an empty, self-closing tag),
+   (c) <tag attribute(s)> (an empty, implicity-closed tag with attributes),
+   (d) <tag attribute(s)/> (a self-closing tag with attributes),
+   (e) <tag attribute(s)></tag>, (an empty tag with attributes)
+   (f) <tag attribute(s)>body</tag> (an opening tag with attributes, content, and a closing tag)
+A <tag> is used to initialize an element, attributes are used to modify how an element functions,
+  and the content between an opening <tag> and closing </tag> specify an element's body.
+-->
+
+<!-- This tag tells your browser to follow the official HTML spec as best as it can. -->
+<!DOCTYPE html>
+
+<!-- The <head> element represents your document's **metadata**, which you can specify with any number of
+         <meta>, <title>, <script>, <base>, <link>, <style> tags. We'll demo the first three for now. -->
+<head>
+  <!-- This tag tells the browser that our document is written in English. -->
+  <meta lang="en" />
+  <!--
+  We need to ensure two things before we write any JavaScript:
+     (a) that the HTML is linked to our JS with a <script> tag (best as a child of <head>).
+     (b) that we wait for our site to load before we try to manipulate it, by either:
+              (i) adding the 'defer' keyword to <script>.
+              (ii) running our code after the event "DOMContentLoaded" fires on `document`.
+              (iii) running our code after the event "load" fires on `document`.
+  Option (a)(ii) fires after the DOM loads, and Option (a)(iii) fires after the DOM, CSS, and images load.
+  We recommend you go with Option (a)(i), because it lets you write top-level code in JS.
+  That's the option I went with here, which is why I can start manipulating right away in `index.js`.
+  -->
+ <script defer src="./index.js"></script>
+</head>
+
+<!-- The <body> of a document represents its visual contents, e.g. text, images, videos, forms, etc. -->
+<body>
+  <article>
+    <header>
+      <h1>An Introduction to JavaScript</h1>
+      <address>by <a rel="author">Sakib Rasul</a></address>
+      Updated <time datetime="2023-09-12">September 17, 2023</time>
+    </header>
+  </article>
+</body>

@@ -1,8 +1,8 @@
 /*
 
-Phase 1 -> The JavaScript Playground
+Phase 1 -> An Introduction to JavaScript
 by Sakib Rasul
-Updated September 12, 2023
+Updated September 17, 2023
 Created August 21, 2023
 
 */
