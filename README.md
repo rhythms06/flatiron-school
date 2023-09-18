@@ -15,7 +15,9 @@ _Calculate distances and fares for their hyperlocal ridesharing service._
 _Modify new and existing elements on a webpage with the power of JavaScript._
 
 ## [Events](phase-1/events)
-- [TaskLister](phase-1/events/code)
+- [Introduction](phase-1/events/introduction)
+_An introduction to event listeners._
+- [TaskLister](phase-1/events/tasks)
 _Use event listeners to add and remove tasks to and from a to-do list._
 
 ## [GET](phase-1/get)
