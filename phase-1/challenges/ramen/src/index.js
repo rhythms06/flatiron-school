@@ -1,6 +1,6 @@
 /*
 Phase 1 -> Mock Code Challenge
-Updated July 19, 2023 | Created May 31, 2023
+Updated September 20, 2023 | Created May 31, 2023
 Written by Sakib Rasul
 
 CORE DELIVERABLES
@@ -12,6 +12,7 @@ The user should be able to...
 */
 
 // Display a given dish's details.
+// Note: You can ignore this function if you prefer a solution without it.
 function displayRamen(ramen) {
     // Retrieve `<img class="detail-image" ...>` and set its `src` and `alt` attributes.
     const selectedImg = document.querySelector(".detail-image");
@@ -26,6 +27,7 @@ function displayRamen(ramen) {
 
 // Append a new ramen dish `ramen` (an object with properties `image`, `name`, etc.) to `#ramen-menu`.
 // Note: We're encapsulating this behavior in a global helper function because we'll invoke it in two local scopes.
+//       You can ignore this function if you prefer a solution without it.
 function loadRamen(ramen) {
     // Retrieve `<div id=ramen-menu">` (so that we can append to it).
     const menu = document.querySelector("#ramen-menu");
@@ -49,11 +51,54 @@ fetch("http://localhost:3000/ramens")
     // Convert the resulting JSON to JS.
     .then(response => response.json())
     // Note: Here's the first local scope!
-    .then(ramenDishes => {
+    .then(ramens => {
         // Display the first dish's details.
-        displayRamen(ramenDishes[0]);
+        // OPTION 1: Call a function that displays a dish's details.
+        // displayRamen(ramenDishes[0]);
+        // OPTION 2: Display the first dish's details here.
+        // Retrieve `<img class="detail-image" ...>` and set its `src` and `alt` attributes.
+        const image = document.querySelector(".detail-image");
+        image.src = ramens[0].image;
+        image.alt = ramens[0].name;
+        // Set the texts of elements referring to the name, restaurant, rating, and comment of the first dish.
+        document.querySelector(".name").textContent = ramens[0].name;
+        document.querySelector(".restaurant").textContent = ramens[0].restaurant;
+        document.querySelector("#rating-display").textContent = ramens[0].rating;
+        document.querySelector("#comment-display").textContent = ramens[0].comment;
         // Iterate over the resulting array of ramen dishes, and load each one.
-        ramenDishes.forEach(ramen => loadRamen(ramen))
+        ramens.forEach(ramen => {
+            // OPTION 1: Call a function that loads a dish into the menu.
+            // loadRamen(ramen);
+            // OPTION 2: Load the dish into the menu here.
+            // Retrieve `<div id=ramen-menu">` (so that we can append to it).
+            const menu = document.querySelector("#ramen-menu");
+            // Create a new `<img>` tag (so that we can display `ramen` in `#ramen-menu`).
+            const img = document.createElement("img");
+            // Set the `<img>` `src` (URL) and `alt` (text) attributes.
+            // Note: Setting the `alt` attribute is not a core deliverable.
+            // OPTION 1: Access the ramen's image URL with dot notation.
+            img.src = ramen.image;
+            // OPTION 2: Access the ramen's image URL with bracket notation.
+            // img.src = ramen["image"];
+            img.alt = ramen.name;
+            // Append the newly created `<img src="..." alt="...">` to `<div id=ramen-menu">`.
+            menu.append(img);
+            // Handle clicks on `<img>` (i.e. selecting a dish) by populating `<div id="ramen-detail">`.
+            img.addEventListener("click", () => {
+                // OPTION 1: Call a function that displays a dish's details.
+                // displayRamen(ramen);
+                // OPTION 2: Display the clicked dish's details here.
+                // Retrieve `<img class="detail-image" ...>` and set its `src` and `alt` attributes.
+                const selectedImg = document.querySelector(".detail-image");
+                selectedImg.src = ramen.image;
+                selectedImg.alt = ramen.name;
+                // Set the texts of elements referring to the name, restaurant, rating, and comment of the selected dish.
+                document.querySelector(".name").textContent = ramen.name;
+                document.querySelector(".restaurant").textContent = ramen.restaurant;
+                document.querySelector("#rating-display").textContent = ramen.rating;
+                document.querySelector("#comment-display").textContent = ramen.comment;
+            });
+        });
     });
 
 // Handle form submissions (by handling `submit` events on `<form id="new-ramen">`).
@@ -61,14 +106,47 @@ fetch("http://localhost:3000/ramens")
 document.querySelector("#new-ramen").addEventListener("submit", event => {
     // Prevent default behavior.
     event.preventDefault();
-    // Instantiate a new ramen dish and pass it to `loadRamen` to add it to the menu.
-    loadRamen({
-        "name": event.target.name.value,
-        "restaurant": event.target.restaurant.value,
-        "image": event.target.image.value,
-        "rating": event.target.rating.value,
-        // We need to use bracket notation here because of the hyphen in `new-comment`.
-        "comment": event.target['new-comment'].value
+    // Add the new dish to the menu.
+    // OPTION 1: Instantiate a new ramen dish and pass it to `loadRamen` to add it to the menu.
+    // loadRamen({
+    //     "name": event.target.name.value,
+    //     "restaurant": event.target.restaurant.value,
+    //     "image": event.target.image.value,
+    //     "rating": event.target.rating.value,
+    //     // We need to use bracket notation here because of the hyphen in `new-comment`.
+    //     "comment": event.target['new-comment'].value
+    // });
+    // OPTION 2: Load the new ramen dish into the menu here.
+    // Retrieve `<div id=ramen-menu">` (so that we can append to it).
+    const menu = document.querySelector("#ramen-menu");
+    // Create a new `<img>` tag (so that we can display `ramen` in `#ramen-menu`).
+    const img = document.createElement("img");
+    // Set the `<img>` `src` (URL) and `alt` (text) attributes.
+    // Note: Setting the `alt` attribute is not a core deliverable.
+    const imageURL = event.target.image.value;
+    img.src = imageURL;
+    const name = event.target.name.value;
+    img.alt = name;
+    // Append the newly created `<img src="..." alt="...">` to `<div id=ramen-menu">`.
+    menu.append(img);
+    // Handle clicks on `<img>` (i.e. selecting a dish) by populating `<div id="ramen-detail">`.
+    // We'll need the ramen's restaurant name, rating, and comment in this event handler, so let's retrieve them here.
+    const restaurantName = event.target.restaurant.value;
+    const rating = event.target.rating.value;
+    const comment = event.target['new-comment'].value;
+    img.addEventListener("click", () => {
+        // OPTION 1: Call a function that displays a dish's details.
+        // displayRamen(ramen);
+        // OPTION 2: Display the clicked dish's details here.
+        // Retrieve `<img class="detail-image" ...>` and set its `src` and `alt` attributes.
+        const selectedImg = document.querySelector(".detail-image");
+        selectedImg.src = imageURL;
+        selectedImg.alt = name;
+        // Set the texts of elements referring to the name, restaurant, rating, and comment of the selected dish.
+        document.querySelector(".name").textContent = name;
+        document.querySelector(".restaurant").textContent = restaurantName;
+        document.querySelector("#rating-display").textContent = rating;
+        document.querySelector("#comment-display").textContent = comment;
     });
     // Reset the form.
     // Note: This functionality is convenient, but is not a core deliverable.
