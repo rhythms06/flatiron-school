@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './Problem';
 
 // To turn off Strict Mode for your entire app, just stop wrapping
 //    your <App /> in <React.StrictMode> tags, i.e. remove
