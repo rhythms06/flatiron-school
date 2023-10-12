@@ -89,3 +89,5 @@ _Browse and add to my tea collection with the help of components, props, state, 
 ## [Challenges](phase-2/challenges)
 - [Bob's Neighbors](phase-2/challenges/stores)
 _Create a database of punny store names, with the help of `GET`, `POST`, `PATCH`, `DELETE`, events, and manipulation._
+- [Planetary Registry](phase-2/challenges/planets)
+_Create a database of planets with the help of React!_
