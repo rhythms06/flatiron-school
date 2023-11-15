@@ -11,7 +11,7 @@ Objectives
 Takeaways
 - "click" and "submit" events
 - `event.preventDefault()`
-- `event.target`
+- `[form].[input].value`
 
 */
 
@@ -36,12 +36,10 @@ form.addEventListener("submit", (event) => {
     // and `preventDefault()` is an event method that suppresses default behavior.
     event.preventDefault();
     console.log("The user entered a date!");
-    // `event.target` refers to the element that an event fired on.
-    // Here, `event.target` is equivalent to `form`, which is equivalent to `<form ...></form>`.
-    // `event.target.date` is equivalent to `<input name="date" .../>`.
-    // `event.target.date.value` is the value entered into `<input name="date" .../>`.
-    const newDate = event.target.date.value;
+    // We can use dot or bracket notation to access a form's input elements.
+    // `form.date` is equivalent to `<input name="date" .../>`.
+    // `form.date.value` is the value entered into `<input name="date" .../>`.
+    const newDate = form.date.value;
     // Now that we have the selected date, we can populate #sometime with it!
     document.querySelector("#sometime").textContent = "On " + newDate + ".";
 });
-
