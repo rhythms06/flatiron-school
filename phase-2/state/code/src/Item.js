@@ -10,14 +10,15 @@ export default function Item({ item: { name, price } }) {
   // We'll set its initial value to false (i.e. the item isn't in the cart)
   //       and update it to true/false when "Add to Cart"/"Remove from Cart" is clicked.
   const [ isInCart, setIsInCart ] = useState(false);
-
+  function toggleCart() { setIsInCart(!isInCart); }
+  console.log(name + (isInCart ? " IS " : " IS NOT ") + "in cart.");
   return (
     <li>
       {/* Since we destructured props.item, we save ourselves from writing `item.name` and `item.price`. */}
       <h2>{name} for only ${price}!</h2>
       <p>
-        {/* We're using this <span> as a button, so it'll be the tag that receives our state-updating-callback-function as a prop. */}
-        <button onClick={() => { setIsInCart(!isInCart) }}>
+        {/* This button invokes `toggleCart`, which toggles `isInCart` between true and false. */}
+        <button onClick={toggleCart}>
           {/* On load: {true ? "Add to Cart" : "Remove from Cart"} a.k.a. Add to Cart */}
           <strong>{!isInCart ? "Add to Cart" : "Remove from Cart"}</strong>
           {/* After click and re-render: {false ? "Add to Cart" : "Remove from Cart"} a.k.a. Remove from Cart */}
@@ -25,7 +26,7 @@ export default function Item({ item: { name, price } }) {
         </button>
         {/* Some manual spacing, nothing to see here... */}
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        {/* A second span element whose textContent depends on isInCart. */}
+        {/* This span element's textContent changes whenever `isInCart` changes. */}
         {/* On load: {true ? "Not in Cart" : "In Cart"} a.k.a. Not in Cart */}
         <span>{!isInCart ? "Not in Cart" : "In Cart"}</span>
         {/* After a state update and re-render: {false ? "Not in Cart" : "In Cart"} a.k.a. In Cart */}
