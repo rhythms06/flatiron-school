@@ -55,9 +55,11 @@ export default function Form() {
         <form onSubmit={handleSubmit}>
             {/* To control an input, pass it a state getter (name) and setter (setName) as props (value, onChange). */}
             <label><strong>Name </strong>
-                <input value={name} onChange={event => setName(event.target.value)} />
+                <input value={name} onChange={event => {
+                    if (!event.target.value.includes("8")) setName(event.target.value)
+                }} />
             </label>
-            {/* Uncomment for an implementation of "Name" with just one state: */}
+            {/* Uncomment for an implementation of "Name" with just one state (without the bonus validation): */}
             {/* To control an input, pass it a state getter (user) and setter (setUser) as props (value, onChange). */}
             {/* <label><strong>Name </strong>
                 <input value={name} onChange={event => setUser({ name: event.target.value, movie: movie })} />
