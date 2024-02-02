@@ -23,7 +23,7 @@ export default function App() {
   //   and (b) it doesn't depend on existing props or state (i.e., we can't use `error` to derive `dishes`).
   const [dishes, setDishes] = useState([]);
   // Let's *NOT* use state to manage the featured menu item, because it can be derived from `dishes`.
-  const featuredDish = dishes[0];
+  const featuredDish = dishes.find(dish => dish.isFeatured);
   // Let's use state to manage our app's error message because:
   //       (a) it's dynamic (we're initially error-free, but might encounter an error on `fetch()`)
   //   and (b) it doesn't depend on existing props or state (i.e., we can't use `dishes` to derive `error`).
@@ -65,8 +65,6 @@ export default function App() {
       },
       // We specify `body` to send along our (JSONified) new dish.
       body: JSON.stringify({
-        // This is one, but not the only way, to create a new dish identifier.
-        "id": dishes[dishes.length - 1].id + 1,
         // We'll want to make sure to POST any fields we're rendering in our list (or else our list might break!)
         "name": name,
         "price": price

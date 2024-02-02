@@ -1,38 +1,33 @@
 {
   "menu": [
     {
-      "id": 4,
+      "id": "1",
       "name": "Fried Chicken Taco",
-      "image": "./assets/calexico-fried-chicken-taco.webp",
-      "description": "Fried chicken, bacon, avocado, spicy pico de gallo, and chipotle buttermilk sauce. Served on a toasted flour tortilla.",
-      "price": 6.5,
-      "number_in_bag": 1
+      "price": 8
     },
     {
-      "id": 5,
+      "id": "2",
       "name": "Pollo Asado Quesadilla",
-      "image": "./assets/calexico-pollo-asado-quesadilla.webp",
-      "description": "Grilled marinated chicken.",
-      "price": 13,
-      "number_in_bag": 0
+      "price": 13
     },
     {
-      "id": 6,
+      "id": "3",
       "name": "Nachos",
       "price": 15
     },
     {
-      "id": 7,
+      "id": "4",
       "name": "Fries",
-      "price": 24
+      "price": 24,
+      "isFeatured": true
     },
     {
-      "id": 8,
+      "id": "5",
       "name": "Wings",
       "price": 10
     },
     {
-      "id": 9,
+      "id": "6",
       "name": "Chips",
       "price": 24
     }
