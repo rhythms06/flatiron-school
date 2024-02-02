@@ -13,7 +13,6 @@ Core Deliverables
 
 */
 
-// We're rendering multiple forms, so let's specify their JSX in a child component.
 import Form from './Form';
 
 export default function App() {
