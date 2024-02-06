@@ -1,0 +1,114 @@
+@font-face {
+    font-family: bob;
+    src: url("../public/assets/bob2.ttf");
+}
+
+html, body {
+    margin:0;
+    padding:0;
+    height:100vh;
+    background-color: #f4e051;
+    color: #db3e3b;
+    font-family: bob;
+    width:100%;
+}
+
+#root, .main-container {
+    width: 100%;
+}
+
+.main-container h1 {
+    text-align: center;
+    margin-top:0;
+    margin-bottom:.25em;
+    font-size: 4em;
+}
+
+.main-container img {
+    margin-top:1em;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/*
+ * TABLE
+ */
+
+table {
+    width: 80%;
+    margin: 0 auto 0 auto;
+    text-align:left;
+}
+
+th {
+    border-bottom: 1px solid #db3e3b;
+    padding:.5em;
+    font-size: 2.5em;
+}
+
+td {
+    text-align: center;
+    padding: 0em .5em 0em .5em;
+    font-size: 2em;
+}
+
+.row-name {
+    overflow: hidden;
+    text-overflow:ellipsis;
+    text-align:left;
+    /* white-space: nowrap; */
+}
+
+/*
+ * SEARCH
+ */
+
+.search-container {
+    text-align: center;
+}
+
+.search-container input {
+    text-align: center;
+    font-family: bob;
+    font-size:2em;
+    width:40%;
+    border-radius: 4em;;
+}
+
+/*
+ * FORM
+ */
+ form#newStoreForm {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1em;
+    margin-left: 25%;
+    margin-right: 25%;
+    gap:.25em;
+}
+
+form#updatedStoreForm {
+   display: flex;
+   gap: 5px;
+}
+
+form#newStoreForm input, button {
+   font-size: 2em;
+}
+
+form#updatedStoreForm input, button {
+   font-size: 0.6em;
+}
+
+form input, button {
+   font-size: 2em;
+   font-family: bob;
+   border-radius: 4px;
+}
+
+td#storeOptions {
+   display: flex;
+   gap: 25px;
+}
