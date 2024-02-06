@@ -50,22 +50,30 @@ function App() {
     //         are available to that callback!
   }, []);
 
-  // The function to run when the user submits NewStoreForm.
+  // Using state for each input
+  /*const [newName, setNewName] = useState("");
+  function onNameChange(event) { setNewName(event.target.value); }
+  const [newImage, setNewImage] = useState("");
+  function onImageChange(event) { setNewImage(event.target.value); }
+  const [newSeason, setNewSeason] = useState(0);
+  function onSeasonChange(event) { setNewSeason(event.target.value); }
+  const [newEpisode, setNewEpisode] = useState(0);
+  function onEpisodeChange(event) { setNewEpisode(event.target.value); }*/
+
+  // Using one state for all inputs
+  const [newStore, setNewStore] = useState({
+    name: "", image: "", season: 0, episode: 0
+  });
+
+  function onChangeNewStore(event) {
+    setNewStore({ ...newStore, [event.target.name]: event.target.value })
+  };
+
+  // NewStoreForm's submit handler.
   // This syntax is equivalent to `function onAddStore(event) {...}`.
   const onAddStore = event => {
     // Remember to prevent a form submission's default behavior!
     event.preventDefault();
-    // Let's create a new store object to add to state and the database.
-    // Remember, `event.target` is the form, and `event.target.[name]`
-    //           is <input name=[name] /> or <input id=[name] />,
-    //           if one exists as a child of the form.
-    const newStore = {
-      "name": event.target.name.value,
-      "image": event.target.image.value,
-      "season": event.target.season.value,
-      "episode": event.target.episode.value
-    };
-    // Let's POST `newStore` to the database...
     fetch("http://localhost:8085/stores", {
       method: "POST",
       headers: {
@@ -156,7 +164,8 @@ function App() {
       <img src="/images/bobsburgers.png" />
       <h1>Neighbor Stores</h1>
       <Search query={query} onUpdateQuery={onUpdateQuery} />
-      <NewStoreForm onAddStore={onAddStore} />
+      <NewStoreForm onAddStore={onAddStore}
+                    newStore={newStore} onChangeNewStore={onChangeNewStore} />
       <StoreList stores={visibleStores}
                  onUpdateStore={onUpdateStore}
                  onDeleteStore={onDeleteStore} />
