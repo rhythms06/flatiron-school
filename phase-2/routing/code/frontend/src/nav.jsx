@@ -10,11 +10,11 @@ export default function Nav() {
                 Sakib's Tea House
             </NavLink>
             <div className="flex gap-5 items-center">
-                <NavLink to="teas"
+                <NavLink to="/teas"
                             className={({ isActive }) => `px-1.5 hover:underline ${isActive && 'font-semibold'}`}>
                     Our Teas
                 </NavLink>
-                <NavLink to="about"
+                <NavLink to="/about"
                             className={({ isActive }) => `px-1.5 hover:underline ${isActive && 'font-semibold'}`}>
                     About
                 </NavLink>

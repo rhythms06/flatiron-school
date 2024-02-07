@@ -19,10 +19,7 @@ import reportWebVitals from './reportWebVitals';
 // Tailwind CSS (along with ../tailwind.config.js)
 import "./index.css";
 // React Router
-import {
-  createBrowserRouter,
-  RouterProvider
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // Routes & Error Handling
 // Note: By convention, routes are named `routes/[slug].jsx`.
 import Error from './error';
