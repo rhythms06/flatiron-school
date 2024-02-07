@@ -1,13 +1,13 @@
 /*
 Phase 2 -> Routing
-by Sakib Rasul | June 23, 2023
+by Sakib Rasul | Updated February 7, 2024 | Created June 23, 2023
 
 Core Deliverables
 1. Install React Router (a project requirement) and Tailwind CSS (an optional approach to styling).
-2. Create a root layout and two nested routes.
+2. Create a root layout and three nested routes.
    a. Add a <nav> to the root and render the other routes in an outlet.
-3. Handle errors with a custom component.
-4. GET resources from your backend, and hold them in state.
+3. (Optional) Handle errors with a custom component.
+4. GET resources from your backend, and hold them in state. Optionally formulate your fetch() in a loader.
 5. Pass props down to a form with controlled inputs.
    a. On submit, POST to your backend, and update state.
 */
