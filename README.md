@@ -1,8 +1,8 @@
-Hi, I'm Sakib - a software engineering instructor. Here are some of my notes.
-
-Updated: March 11, 2024
+Hi! I'm **Sakib Rasul**, an instructor at [Flatiron School](https://flatironschool.com). Here are some of my notes on software engineering.
 
 If you see something wrong, [you can let me know with a pull request](https://github.com/rhythms06/flatiron-school/compare). Thanks!
+
+_Updated: March 11, 2024_
 
 # [Phase 1: JavaScript](phase-1)
 
