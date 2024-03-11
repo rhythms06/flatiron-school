@@ -1,0 +1,76 @@
+<!--
+  A webpage, in its simplest form, is a structured list of visual and non-visual **elements** meant to
+  be consumed by people like you and me on the World Wide Web. In November 1993, a few such elements
+  were specified, like headers, paragraphs, and lists. Each element was given an abbreviation, e.g.
+  <h1> for primary headers and <p> for paragraphs, and a syntax was formed for specifying an element's
+  **attributes** and **content**. Thus came about the advent of Hypertext Markup Language, or HTML,
+  the world's common format for describing the contents of a webpage. 
+  
+  An **HTML document** represents a webpage's elements with **tags**, in the following ways:
+   (a) <tag>body</tag> (an opening tag, content, and a closing tag),
+   (b) <tag/> (an empty, self-closing tag),
+   (c) <tag attribute(s)> (an empty, implicity-closed tag with attributes),
+   (d) <tag attribute(s)/> (a self-closing tag with attributes),
+   (e) <tag attribute(s)></tag>, (an empty tag with attributes)
+   (f) <tag attribute(s)>body</tag> (an opening tag with attributes, content, and a closing tag)
+
+  A <tag> is used to "open" an element, like a paragraph with <p>.
+  A closing </tag> is used to "close" an element, like a paragraph with </p>.
+  An **attribute** describes a feature of an element, like an image's source with <img src="source">.
+
+  The **content**, or the stuff between an opening <tag> and closing </tag>, is an element's **children**.
+  An element's children can be one or more other elements, onscreen text, or a combination of both.
+  For example, <p>This is an <em>important</em> paragraph.</p> denotes a paragraph with both
+  element-based (<em>important</em>) and text-based ("This is an " and " paragraph.") children. 
+
+  **Void elements** cannot have children, e.g. <img src="images.com/apple.png" />.
+  Trailing /s in opening tags like the one above are actually ignored by HTML **parsers**, but we
+  often include them for readability and compatibility with HTML addons. 
+
+  Whereas elements describe the structure of our webpage, **comments** like this introductory blurb
+  are a language-agnostic, developer construct. Comment syntax varies from language to language;
+  in HTML, we surround comments with [less than symbol]!-- and --[greater than symbol].
+  In many **Integrated Development Environments**, we can use the shortcut Ctrl+/ or Cmd+/ to (un)comment
+  selected text. 
+
+  With all that ado out of the way, let's take a look at our first HTML document!
+-->
+
+<!-- This tag tells your browser to follow the official HTML spec when interpreting your document. -->
+<!-- It's so important that it gets its own term: it's your document's **preamble**! -->
+<!-- Preambles are **void**, meaning we won't be pairing this line with content or a closing tag. -->
+<!DOCTYPE html>
+
+<!--
+  The <head> element is not void, and contains as its children a document's non-visual elements,
+  like its title, styles, scripts, favicons, and metadata.
+-->
+<head>
+  <meta lang="en" />
+  <title>HTML and JS: A Primer</title>
+  <!--
+    JavaScript (JS) is a language, like HTML, built with a different purpose in mind: adding
+    interactivity to webpages. To link some JS to this document, we'll want to:
+      (a) Create a new file on our machine with the .js extension, e.g. index.js.
+      (b) Write a <script> element to tell the browser that this document is associated with that file.
+    
+    A <script> should go in the <head> of an HTML document, since it is inherently non-visual.
+    We'll often want to add two attributes to our <script> tags:
+      (a) src: The path to our file, e.g. "index.js".
+      (b) defer: This tells our browser to run the <script> only after the entire webpage has loaded.
+          Note: You may see "DOMContentLoaded" and "load" being used for the same purpose.
+
+    Also note, <script> is a non-void element, so we'll need a closing </script>.
+  -->
+ <script defer src="./index.js"></script>
+</head>
+
+<!-- The <body> contains as its children a document's visual elements, e.g. text, images, etc. -->
+<body>
+  <article>
+    <h1>An Introduction to HTML and JavaScript</h1>
+    <address>by Sakib Rasul</address>
+    <p>To get started, visit <a href="index.js">./index.js</a>!</p>
+    Updated <time datetime="2024-03-04">March 4, 2024</time>.
+  </article>
+</body>
