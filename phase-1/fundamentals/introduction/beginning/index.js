@@ -2,8 +2,13 @@
 
 Phase 1 -> An Introduction to JavaScript
 by Sakib Rasul
-Updated March 8, 2024
+Updated March 12, 2024
 Created August 21, 2023
+
+Core Deliverables
+1. Learn about variables, types, arrays, conditional statements,
+   functions, and scope.
+2. Complete the three challanges.
 
 */
 
