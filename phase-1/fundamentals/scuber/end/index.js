@@ -1,18 +1,12 @@
 /*
-    Phase 1 -> Functions
+    Phase 1 -> Scuber
     Sakib Rasul
+    Updated March 12, 2024
     Created August 1, 2023
 
     Core Deliverables
     1. Complete the following helper functions for a ridesharing service that operates
-       between blocks in Manhattan.
-
-    Tip: I've omitted the tests originally bundled with this assignment because I want
-         you to take them with a grain of salt. In many cases, the tests will fail simply
-         because you didn't write your solution in a particular way. Your ability to pass
-         these kinds of tests has no impact on your grades here at Flatiron School.
-         In any case, common false-negatives include naming things wrong and
-         not returning things from functions.    
+       between blocks in Manhattan.   
 */
 
 // This function takes a block number and returns its distance in blocks from Block 42.
@@ -31,7 +25,6 @@ function distanceFromHqInFeet(pickupBlock) {
 function distanceTravelledInFeet(start, end) {
     return Math.abs(start - end) * 264;
 }
-
 
 // This function takes two block numbers and returns the fare for travelling from one to the other.
 //  (a) Rides up to 400ft. are free of charge.
