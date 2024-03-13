@@ -13,7 +13,7 @@ _An introduction to variables, types, objects, arrays, conditional statements, f
 _Calculate distances and fares for their hyperlocal ridesharing service._
 
 ## [Manipulation](phase-1/manipulation)
-- [Today, Tomorrow, Forever?](phase-1/manipulation/code)
+- [Today, Tomorrow, Forever?](phase-1/manipulation)
 _Modify new and existing elements on a webpage with the power of JavaScript._
 
 ## [Events](phase-1/events)
