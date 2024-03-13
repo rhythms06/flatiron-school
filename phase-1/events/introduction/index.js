@@ -2,11 +2,12 @@
 
 Phase 1 -> DOM Events
 by Sakib Rasul
-Updated on September 17, 2023 | Created on September 13, 2023
+Updated March 13, 2024
+Created September 13, 2023
 
 Objectives
-1. Do something when to #tomorrow when it is clicked.
-2. Do something to #sometime when #form is submitted.
+1. Do something when an event fires on an element.
+2. Handle a form submission by reading its input.
 
 Takeaways
 - "click" and "submit" events
@@ -15,31 +16,42 @@ Takeaways
 
 */
 
+// Often, we don't want to manipulate the DOM immediately.
+// We want to wait for some triggering **event**, like a "click" on a <button>
+// or a "hover" on an <h1> element, before we create, update, or delete an element.
 
-// Let's add a click event listener to #tomorrow. First, we'll need a reference.
-const tomorrowTag = document.querySelector("#tomorrow");
-// Next, we add a `click` listener to `tomorrowTag`.
-tomorrowTag.addEventListener("click", () => {
-    // Whatever we write here will run when a user clicks on "Tomorrow."
-    console.log("The user clicked on Tomorrow.");
+// ~ the "click" event
+// Let's say we want to manipulate the DOM after a user clicks on p#tomorrow.
+// In programmer-speak, we'd say we want to **listen** for a "click" on p#tomorrow,
+// and that that "click" event's **target** is that p#tomorrow element.
+// Events are actions written in lowercaseactionwordorphrase syntax.
+
+// To get started, we'll need to select and name our target p#tomorrow.
+const tomorrowTag = document.querySelector("p#tomorrow");
+// Next, we add a "click" **event listener** to the target.
+// An event listener is a callback function whose (optional) parameter is an event.
+tomorrowTag.addEventListener("click", event => {
+    // ...and that's it! Whatever we write here will run every time a user clicks on p#tomorrow.
+    // If we choose to include the optional event parameter, we can invoke its target element.
+    console.log("The user clicked on '" + event.target.textContent + "'.");
     tomorrowTag.textContent = "Tomorrow!";
-    tomorrowTag.remove();
 });
 
-// Now let's write a form submission handler.
-const form = document.querySelector("#form");
-form.addEventListener("submit", (event) => {
+// ~ the "submit" event
+// Now, let's try handling a form submission!
+// When a <form> is submitted in HTML, a "submit" event fires. So we'll listen for that!
+document.querySelector("#form").addEventListener("submit", event => {
     // By default, browsers redirect to a new URL when a form is submitted.
     // This means that our event handler doesn't get to run :(
     // To prevent this (and any other default) behavior, we can use `event.preventDefault()`.
-    // `event` is an object that all event handlers have access to,
-    // and `preventDefault()` is an event method that suppresses default behavior.
     event.preventDefault();
-    console.log("The user entered a date!");
-    // We can use dot or bracket notation to access a form's input elements.
-    // `form.date` is equivalent to `<input name="date" .../>`.
-    // `form.date.value` is the value entered into `<input name="date" .../>`.
-    const newDate = form.date.value;
-    // Now that we have the selected date, we can populate #sometime with it!
+    console.log("The form was submitted!");
+    // We can access a form's input elements by name using dot or bracket notation.
+    // e.g., `document.querySelector("#form").date` <-> `event.target.date` <-> `<input name="date" .../>`.
+    // Once we've selected an input element, we can access its current value with the `value` attribute.
+    const newDate = event.target.date.value;
     document.querySelector("#sometime").textContent = "On " + newDate + ".";
 });
+
+// ~ challenges
+// 1. Add some non-click, non-submit event listener to the page. It can trigger whatever you wish!

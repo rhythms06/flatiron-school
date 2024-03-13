@@ -1,3 +1,21 @@
+<!--
+
+Phase 1 -> DOM Events
+by Sakib Rasul
+Updated March 13, 2024
+
+Objectives
+1. Write a form.
+2. Make that form accessible outside of this file.
+3. See ./index.js.
+
+Takeaways
+- A <form> lets you process user input.
+- A <label> lets you label an <input>.
+- An <input> of a type and name lets a user enter input.
+
+-->
+
 <!DOCTYPE html>
 
 <head>
@@ -17,9 +35,11 @@
     <p id="sometime"></p>
   </div>
   <form id="form">
-    <label>
-      <input type="date" name="date" value="2023-09-13" />
-      <input type="submit" value="Change Date" />
+    <!-- This input will let the user enter a date. -->
+    <label>Date
+      <input type="date" name="date" value="2024-03-13" />
     </label>
+    <!-- This button will let the user submit the form. -->
+    <input type="submit" value="Change Date!" />
   </form>
 </body>
