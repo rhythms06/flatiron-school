@@ -1,4 +1,4 @@
-# Example Project: GoT Books App
-A simple app that retrieves a list of Game of Thrones books by invoking `fetch()`.
+# An Introduction to GET Requests
+_Updated March 14, 2024_
 
-[Link to original assignment.](https://learning.flatironschool.com/courses/6451/assignments/242165)
+An introduction to retrieving things with `fetch()`.
