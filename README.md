@@ -23,7 +23,7 @@ _An introduction to event listeners._
 _Use event listeners to add and remove tasks to and from a to-do list._
 
 ## [GET](phase-1/get)
-- [Game of Thrones](phase-1/get/code)
+- [Game of Thrones](phase-1/get)
 _Retrieve a list of Game of Thrones books by invoking `fetch()`._
 
 ## [POST](phase-1/post)
