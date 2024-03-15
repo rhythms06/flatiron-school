@@ -1,26 +1,28 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Humans, Dogs, Cats, and Robots</title>
-    <script defer src="index.js"></script>
+    <title>Colors</title>
+    <script defer src="./index.js"></script>
   </head>
 
   <body>
-    <h1>Add a Human</h1>
-    <form style="display: flex; flex-direction: column; align-items: start; gap: 10px;">
-      <label>Name <input name="name" /></label>
-      <label>Age <input type="number" name="age" /></label>
-      <label>Job <input name="job" /></label>
-      <label>Number <input type="tel" name="number" /></label>
-      <input type="submit" value="Add Human" />
+    <h1>POST Requests</h1>
+    <h2>Colors</h2>
+    <ol id="colors"></ol>
+    <h2>Submit a new color!</h2>
+    <form id="newColorForm">
+      <label>Name
+        <input name="name" id="name" placeholder="green" />
+      </label>
+      <br /><br />
+      <label>Shade
+        <input name="shade" id="shade" placeholder="light" />
+      </label>
+      <br /><br />
+      <input type="submit" value="Add Color" />
     </form>
-    <h2>Humans</h2>
-    <ul id="humans">
-    </ul>
   </body>
 
 </html>

@@ -1,34 +1,100 @@
 {
   "dogs": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Luca",
       "breed": "German Shepherd"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Lola",
       "breed": "Giant Schnauzer"
     }
   ],
   "cats": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Stanley",
       "breed": "Tabby"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Gunnar",
       "breed": "American Shorthair"
     }
   ],
-  "humans": [],
+  "humans": [
+    {
+      "id": "1",
+      "name": "Sakib Rasul",
+      "likes": [
+        "movies",
+        "music",
+        "tv"
+      ]
+    }
+  ],
   "robots": [
     {
-      "id": 1,
+      "id": "1",
       "name": "C8-09S100K",
       "function": "Human Assistant"
+    }
+  ],
+  "cities": [
+    {
+      "id": "1",
+      "name": "New York",
+      "population": 8500000,
+      "state": "New York",
+      "country": "United States"
+    },
+    {
+      "id": "2",
+      "name": "Houston",
+      "population": 5000000,
+      "state": "Texas",
+      "country": "United States"
+    },
+    {
+      "id": "3",
+      "name": "Los Angeles",
+      "population": 4000000,
+      "state": "California",
+      "country": "United States"
+    },
+    {
+      "id": "4",
+      "name": "Chicago",
+      "population": 2700000,
+      "state": "Illinois",
+      "country": "United States"
+    },
+    {
+      "id": "5",
+      "name": "Miami",
+      "population": 470000,
+      "state": "Florida",
+      "country": "United States"
+    },
+    {
+      "id": "6",
+      "name": "Atlanta",
+      "population": 500000,
+      "state": "Georgia",
+      "country": "United States"
+    }
+  ],
+  "colors": [
+    {
+      "id": "1",
+      "name": "green",
+      "shade": "forest"
+    },
+    {
+      "id": "2",
+      "name": "mauve",
+      "shade": "taupe"
     }
   ]
 }
