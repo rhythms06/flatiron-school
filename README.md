@@ -32,6 +32,10 @@ _Available in [Keynote](https://raw.githubusercontent.com/rhythms06/flatiron-sch
 - [Creating Data with JSON Server and POST Requests](phase-1/post/code)
 _Add humans (or dogs, or cats, or robots, or whatever) to a local database with the help of `json-server` and `fetch()`._
 
+## [Appendix](phase-1/appendix)
+- [Advanced Concepts](phase-1/appendix)
+_An overview of more advanced general programming and JavaScript concepts._
+
 ## [Challenges](phase-1/challenges)
 - [Humans, Dogs, Cats, and Robots](phase-1/challenges/humans)
 _Get, add, update, and remove humans (or dogs, or cats, or robots) from and to a local database with the help of `json-server` and `fetch()`._
