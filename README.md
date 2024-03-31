@@ -48,6 +48,9 @@ _Help Andy manage his toys with `GET`, `POST`, `PATCH`, and `DELETE` requests!_
 
 # Phase 2: React
 
+## [Fundamentals](phase-2/fundamentals)
+_Use build tools to get started in React without a framework._
+
 ## [Props](phase-2/props)
 - [Slides](phase-2/props/slides)
 _Available in [Keynote](https://raw.githubusercontent.com/rhythms06/flatiron-school/main/phase-2/props/slides/props.key
