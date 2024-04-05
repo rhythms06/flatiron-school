@@ -1,0 +1,24 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Why's it called Flatiron?",
+      "author": "Eric Adams"
+    },
+    {
+      "id": 2,
+      "title": "Why We Clap",
+      "author": "Gabriel Sanandaji"
+    },
+    {
+      "id": 3,
+      "title": "On Teaching",
+      "author": "Sakib Rasul"
+    },
+    {
+      "id": 4,
+      "title": "My Feelings",
+      "author": "Chett Tiller"
+    }
+  ]
+}
