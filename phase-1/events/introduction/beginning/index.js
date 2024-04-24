@@ -2,7 +2,7 @@
 
 Phase 1 -> DOM Events
 by Sakib Rasul
-Updated March 13, 2024
+Updated April 24, 2024
 Created September 13, 2023
 
 Objectives
