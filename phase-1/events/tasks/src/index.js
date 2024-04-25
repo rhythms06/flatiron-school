@@ -1,63 +1,53 @@
 /*
 
-Phase 1 -> DOM Events -> TaskLister
-Updated September 17, 2023 | Created May 24, 2023
+Phase 1 -> Events -> TaskLister
+Updated April 25, 2024
+Created May 24, 2023
 By Sakib Rasul
 
-OBJECTIVES
+OBJECTIVE: The user should be able to submit a new task and see it in the list of tasks.
+
+USER STORIES
 The user should be able to...
-1. Specify a new task's description and priority in #create-task-form.
-2. On submit, add that new task to #tasks as an <li> element with:
-   2a. The task's description.
-   2b. The task's priority, denoted with a background color.
-   2c. A delete button that removes the <li> element.
+  1. ...specify a new task's description [bonus: and priority] in <form>.
+  2. ...on submit, add that new task to #tasks as an <li> element with:
+    a. The task's description.
+    b. [bonus] The task's priority, denoted with a color.
+    c. [bonus] A delete button that removes the <li> element.
+  3. [bonus] ...sort tasks by priority.
+
+BRAINSTORMING
+The core problem we want to solve is populating #tasks.
+In order to add to tasks, we need to know what task the user wants to add.
+The user uses the <form> in index.html to indicate that information.
+Therefore, we need to add an event listener to that <form>!
+The event we'll want to handle is "submit", and we'll want to handle it by populating #tasks.
 
 */
 
-// Get the new task form from the DOM, and call it 'form'.
-const form = document.querySelector("#create-task-form");
-// Handle form submissions by listening to form's 'submit' event.
+// Select the <form>, so that we can add a "submit" event handler to it.
+const form = document.querySelector("form");
+// Add a "submit" event handler to `form`.
 form.addEventListener("submit", event => {
-  // Prevent default behavior, i.e. redirecting to a backend service.
+  // Prevent the default behavior of redirecting away to a backend service.
   event.preventDefault();
-  // Get text from input.
-  // OPTION 1: Get the element with querySelector (if the element has a `class` or `id`)
-  // const text = document.querySelector("#new-task-description").value;
-  // OPTION 2: Get the element with event.target (if the element has a `name`)
-  const text = event.target["new-task-description"].value;
-  // Create an <li> and add the retrieved text to it.
+  // Get the task's text.
+  const text = form.task.value;
+  // Place the text in an <li> element.
   const task = document.createElement("li");
   task.textContent = text;
-  // Append a delete button to the <li>.
+  // [Bonus] Append a delete button to the <li>.
   const deleteButton = document.createElement("button");
   deleteButton.textContent = "X";
-  // Listen for the "click" event on the delete button,
-  //        and when clicked, remove the <li>.
-  deleteButton.addEventListener("click", () => {
-    // Remove the <li> element.
-    task.remove();
-  });
-  // Append the <button> to the <li>.
+  deleteButton.addEventListener("click", () => task.remove());
   task.append(deleteButton);
-  // Set the background color, based on the dropdown value.
-  // OPTION 1: Get the element with querySelector (if the element has a `class` or `id`)
-  // const priority = document.querySelector("#new-task-priority").value;
-  // OPTION 2: Get the element with event.target (if the element has a `name`)
-  const priority = document.querySelector("#new-task-priority").value;
-  // Set the task's background color.
-  // Note: You don't need { } around one-line bodies.
-  if (priority === "high") task.style.backgroundColor = "red";
-  if (priority === "medium") task.style.backgroundColor = "yellow";
-  if (priority === "low") task.style.backgroundColor = "green";
-  // Append the new <li> to the existing <ul>.
+  // [Bonus] Set the task's priority.
+  const priority = form.priority.value;
+  if (priority === "high") task.style.color = "red";
+  if (priority === "medium") task.style.color = "yellow";
+  if (priority === "low") task.style.color = "green";
+  // Append `task` to #tasks.
   document.querySelector("#tasks").append(task);
-  // Clear the input text, so that the user can start typing in another task.
-  // OPTION 1: Reset the event target.
-  event.target.reset();
-  // OPTION 2: Clear the input value.
-  // event.target["new-task-description"].value = "";
+  // Reset the form, so that the user can start typing in another task.
+  form.reset();
 });
-
-
-
-

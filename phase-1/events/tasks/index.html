@@ -1,34 +1,33 @@
 <!DOCTYPE HTML>
+
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Flatiron Task Lister</title>
-  <link rel="stylesheet" href="./style.css">
-  <script defer src="./src/index.js"></script>
-</head>
-<body>
-  <div id="main-content">
-    <h1>TaskLister Lite™️</h1>
-
-    <form id="create-task-form">
-      <label for="new-task-description">Description:</label>
-      <input type="text" id="new-task-description" name="new-task-description" placeholder="Practice fetch()">
-      <label>Priority:
-        <select id="new-task-priority" name="new-task-priority">
-          <option value="high">High</option>
-          <option value="medium">Medium</option>
-          <option value="low">Low</option>
-        </select>
-      </label>
-      <input type="submit" value="Add Task">
-    </form>
-
-    <div id="list">
-      <h2>TaskList™️</h2>
-      <ul id="tasks">
-      </ul>
+  <head>
+    <meta charset="UTF-8">
+    <title>TaskLister Lite™️</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./src/index.js"></script>
+  </head>
+  <body>
+    <div id="main-content">
+      <h1>TaskLister Lite™️</h1>
+      <form action="#" method="POST">
+        <label>Description:
+          <input name="task" placeholder="Practice JavaScript">
+        </label>
+        <label>Priority:
+          <select name="priority">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+          </select>
+        </label>
+        <input type="submit" value="Add Task">
+      </form>
+      <div id="list">
+        <h2>TaskList™️</h2>
+        <ul id="tasks">
+        </ul>
+      </div>
     </div>
-  </div>
-
-</body>
+  </body>
 </html>
