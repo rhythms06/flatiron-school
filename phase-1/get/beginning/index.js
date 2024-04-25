@@ -1,7 +1,7 @@
 /*
 
 Phase 1 -> GET
-Updated March 14, 2024
+Updated April 25, 2024
 Created May 25, 2023
 by Sakib Rasul
 
@@ -10,7 +10,7 @@ Objectives
 
 */
 
-// A synchronous request to https://cat-fact.herokuapp.com/facts/random.
+// A synchronous request to https://dog-api.kinduff.com/api/facts?number=1.
 
 // A synchronous request to https://anapioficeandfire.com/api/books.
 
