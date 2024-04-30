@@ -68,6 +68,6 @@ console.log("~~ADVANCED ARRAY METHODS~~");
 // -> array.map() returns an array where each element has been transformed in some specified way.
 
 // ~ Challenges
-// 1. Write a function that takes an array of sentences and returns only the questions in the list.
+// 1. Write a function that takes an array of sentences and returns only those that are questions.
 // 2. Write a function that takes an array of lowercased sentences and returns them capitalized.
 const phrases = ["hello, there!", "how are you?", "It's me!"]; // example array for #1 and #2
