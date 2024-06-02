@@ -48,36 +48,39 @@
 <!-- Preambles are **void**, meaning we won't be pairing this line with content or a closing tag. -->
 <!DOCTYPE html>
 
-<!--
+<!-- The <html> element isn't technically required, but is strongly recommended as the best way to -->
+<!-- inform browsers and users of your content's language. We do so by setting the `lang` attribute! -->
+<html lang="en">
+  <!--
   The <head> element is not void, and contains as its children a document's non-visual elements,
   like its title, styles, scripts, favicons, and metadata.
--->
-<head>
-  <meta lang="en" />
-  <title>HTML and JS: A Primer</title>
-  <!--
-    JavaScript (JS) is a language, like HTML, built with a different purpose in mind: adding
-    interactivity to webpages. To link some JS to this document, we'll want to:
-      (a) Create a new file on our machine with the .js extension, e.g. index.js.
-      (b) Write a <script> element to tell the browser that this document is associated with that file.
-    
-    A <script> should go in the <head> of an HTML document, since it is inherently non-visual.
-    We'll often want to add two attributes to our <script> tags:
-      (a) src: The path to our file, e.g. "index.js".
-      (b) defer: This tells our browser to run the <script> only after the entire webpage has loaded.
-          Note: You may see "DOMContentLoaded" and "load" being used for the same purpose.
-
-    Also note, <script> is a non-void element, so we'll need a closing </script>.
   -->
- <script defer src="./index.js"></script>
-</head>
+  <head>
+    <title>HTML and JS: A Primer</title>
+    <!--
+      JavaScript (JS) is a language, like HTML, built with a different purpose in mind: adding
+      interactivity to webpages. To link some JS to this document, we'll want to:
+        (a) Create a new file on our machine with the .js extension, e.g. index.js.
+        (b) Write a <script> element to tell the browser that this document is associated with that file.
+      
+      A <script> should go in the <head> of an HTML document, since it is inherently non-visual.
+      We'll often want to add two attributes to our <script> tags:
+        (a) src: The path to our file, e.g. "index.js".
+        (b) defer: This tells our browser to run the <script> only after the entire webpage has loaded.
+            Note: You may see "DOMContentLoaded" and "load" being used for the same purpose.
 
-<!-- The <body> contains as its children a document's visual elements, e.g. text, images, etc. -->
-<body>
-  <article>
-    <h1>An Introduction to HTML and JavaScript</h1>
-    <address>by Sakib Rasul</address>
-    <p>To get started, visit <a href="index.js">./index.js</a>!</p>
-    Updated <time datetime="2024-03-04">March 4, 2024</time>.
-  </article>
-</body>
+      Also note, <script> is a non-void element, so we'll need a closing </script>.
+    -->
+  <script defer src="./index.js"></script>
+  </head>
+
+  <!-- The <body> contains as its children a document's visual elements, e.g. text, images, etc. -->
+  <body>
+    <article>
+      <h1>An Introduction to HTML and JavaScript</h1>
+      <address>by Sakib Rasul</address>
+      <p>To get started, visit <a href="index.js">./index.js</a>!</p>
+      Updated <time datetime="2024-03-04">March 4, 2024</time>.
+    </article>
+  </body>
+</html>
