@@ -1,20 +1,113 @@
 # Phase 1
 
-Welcome to the first phase of your coding journey! In this series, you'll learn about **the fundamentals of JavaScript**, **DOM manipulation**, **DOM events**, and **databases**. 
+Welcome to the first phase of your coding journey! In this series, you'll learn about **the fundamentals of HTML and JavaScript**, **DOM manipulation**, **DOM events**, and **databases**. 
 
-## The Code Challenge
+## A Guide to Getting Git
+
+### Creating a repository
+A **repository** is a way of managing projects, their histories, and their copies. To create a repository:
+1. Visit GitHub.
+2. Click **+** > **New repository**. On the following page:
+    1. Choose the name, description, and visibility of your repository.
+    2. Decide if you’d like to initialize the repository with a README.
+    3. Click **Create repository**.
+3. To create a copy of your newly created repository on your computer, [clone it](#cloning-a-repository).
+
+### Forking a repository
+A **fork** is a copy of an existing repository that lives on your GitHub profile. You might fork a project to propose changes to it, or to use it as a template for your own ideas. To fork a repository:
+1. Visit the repository on GitHub.
+2. Click **Fork**. On the following page:
+    1. Choose your fork’s owner, name, and description.
+    2. Decide if you want only the default branch in your fork, or all branches.
+    3. Click **Create fork**.
+3. [Clone your fork](#cloning-a-repository).
+
+### Cloning a repository
+To **clone** a repository is to download a copy of it to your computer:
+1. Visit the repository on GitHub.
+2. Click **< > Code**.
+3. Copy the URL for the repository.
+4. [Terminal] `cd` into the directory you’d like to house your clone and run `git clone [URL]`.
+5. [Visual Studio Code] Hit _Clone Git Repository_….
+6. [GitHub Desktop] Hit _File_ > _Clone Repository_….
+
+### Creating a branch
+A **branch** is one version of a project. A repository starts out with one **default** branch, often named `main`, meant to represent the most up-to-date, official version of the project. A repository may have any number of non-default branches, all meant to represent alternative, in-progress, or experimental versions of the project. To create a branch based on another branch, run `git branch [name of new branch] [name of existing branch]`. For example, to create a branch `beta` off of `main`, you’d run `git branch beta main`.
+
+### Switching between branches
+To switch from your current branch to another branch in your repository, run `git switch [name of other branch]`. If you have any uncommitted changes, you may be asked to [discard](#discarding-or-stashing-changes), [stash](#discarding-or-stashing-changes), or [commit](#staging-committing-and-pushing-to-a-repository) them before moving forward.
+
+### Synchronizing a fork
+When you run `git fetch`, `git pull`, and `git push` in a fork, you’re telling `git` to interact with your fork, and not the original repo. That means, for example, that if you run `git pull`, you’ll receive any changes on your fork that aren’t in your clone, but no changes that may be on the original repo and not on your fork.
+
+To synchronize a fork with its original repository _on the command line_, set the original repository as your fork’s upstream repository, fetch changes from that repository, and merge those fetched changes into your fork:
+1. Run `git remote -v` to see your currently configured `fetch` and `push` URLs. If you see the original repository’s URL next to the word `upstream`, then move onto Step 4. Otherwise, you should only see your fork next to the word `origin`.
+2. Run `git remote add upstream [ORIGINAL REPO URL]` to add the original repo as additional `fetch` and `push` URLs.
+3. Run `git remote -v` again. You should now see the original repository’s URL next to the word `upstream`.
+4. Run `git fetch upstream` to fetch any changes in the upstream repository.
+5. Switch to your `main` branch. If you have any uncommitted changes, `git` may ask you to [discard](#discarding-or-stashing-changes), [stash](#discarding-or-stashing-changes), or [commit](#staging-committing-and-pushing-to-a-repository) them before doing so.
+6. Run `git merge upstream/main` to merge changes made in the original repository’s `main` branch into your fork’s `main` branch. [If there are merge conflicts, you’ll have to resolve them.](#resolving-merge-conflicts)
+7. Finally, if you’d like to update your fork’s `main` branch on GitHub, run `git commit -m “Merge upstream/main”` and `git push origin main`.
+
+To synchronize a fork with its original repository on GitHub:
+1. Visit your fork on GitHub.
+2. Click **Sync fork** > **Update branch** to merge changes made in the original repository’s `main` branch into your fork’s `main` branch. [If there are merge conflicts, you’ll have to resolve them.](#resolving-merge-conflicts)
+3. To apply synchronized changes to a clone of your fork, [fetch](#fetching-merging-and-pulling-from-a-repository) and [merge](#fetching-merging-and-pulling-from-a-repository) them.
+
+### Discarding or stashing changes
+Sometimes, perhaps before switching to or merging changes into a branch, we’ll want to either permanently or temporarily hide away any local, uncommitted changes in our current branch.
+
+To _permanently_ **restore** a file or directory to its state before those changes occurred, we can run `git restore [path of file or directory]`.
+
+To _temporarily_ **stash** all uncommitted changes in your current branch, run `git stash`. You can re-apply the most recently stashed changes by running `git stash pop`. If popped changes conflict with files in your current branch, you’ll have to [resolve those conflicts](#resolving-merge-conflicts).
+
+### Staging, committing, and pushing to a repository
+When you make changes to a clone of a repository, they only live on your computer, initially, at least. To have the changes you’ve made live on GitHub, too:
+1. Run `git add [path to file or directory]` to **stage**, or prepare, some or all of your changes for publishing.
+2. Run `git commit -m “Make some changes around here”` to publish your staged changes in a new **commit**, identified by the message you add in quotes.
+3. Run `git push` to **push**, or upload, your committed changes to GitHub. If you’re pushing to a locally-created branch for the first time, add `-u origin [name of branch]` to the end of the command to set up an upstream connection between between the branch on your computer and the branch on GitHub.
+
+### Fetching, merging, and pulling from a repository
+When someone [pushes](#staging-committing-and-pushing-to-a-repository) to a repository on GitHub, anyone who owns a [clone](#cloning-a-repository) of that repository does not immediately receive those pushed changes.
+
+To **fetch**, or inspect, changes made to your repository on GitHub, run `git fetch`. To **merge**, or apply, those changes into your current branch, run `git merge origin [name of branch]`. If those changes conflict with files in your current branch, you’ll need to [resolve those conflicts](#resolving-merge-conflicts).
+
+Note: If you’re working on a fork, this command will only tell you about changes made to your fork on GitHub. To fetch changes made to a fork’s original repository, you’ll need to [synchronize your fork](#synchronizing-a-fork). 
+
+### Resolving merge conflicts
+Sometimes, perhaps before you re-apply stashed changes or merge fetched changes, you’ll need to resolve **merge conflicts**. A merge conflict occurs whenever some change you want to incorporate into your branch can’t be automatically applied by `git`. We can run `git status` and see any files pending resolution under the header `Unmerged paths:`.
+
+To resolve a file marked as `modified`:
+1. Open the file in a text editor like Visual Studio Code.
+2. Scroll through the file to find a conflict. It should look something like:
+```
+...non-conflicting code...
+<<<<<<< HEAD
+...conflicting code in your current branch...
+=======
+...conflicting code in the other branch or stash...
+>>>>>>> BRANCH-NAME
+...non-conflicting code
+```
+
+4. Decide what you want to keep, and replace the conflict (everything beginning from `<<<<<<< HEAD`, up to and including `>>>>>>> BRANCH-NAME`) with what whatever that is. Maybe it’s all of the code in your current branch, all of the code in the other branch or stash, some combination of the two, or something completely new. It’s up to you!
+5. [Stage](#staging-committing-and-pushing-to-a-repository) the file to mark the conflict as resolved.
+
+To resolve a file marked as `deleted`:
+1. Open the file in a text editor like Visual Studio Code, and decide if you want to keep it.
+2. To keep the file and mark the conflict as resolved, [stage it](#staging-committing-and-pushing-to-a-repository).
+3. To remove the file and mark the conflict as resolved, run `git rm [path to file]`.
+
+
+## The Assessment
 *This section can serve as a guide if you're a prospective or current student at Flatiron School. Otherwise, it won't make much sense.*
 
-### Core Deliverables
+### Topics
 * **Fundamentals**: linking JavaScript to HTML, deferring scripts, variables, types, functions, arrays, objects, conditional statements, and local and global scope.
 * **DOM Manipulation**: the `document` interface, selecting existing elements, creating new elements, appending elements to the DOM, modifying elements, and removing elements from the DOM.
 * **DOM Events**: event listeners and handlers, preventing default handlers, manipulating the DOM when events occur
 * **`GET`**: retrieving data with `fetch(URL)`, parsing JSON with `response.json()`, and handling received objects and arrays.
 * **JSON Server**: creating a local API with `json-server` and running `fetch(URL)` requests on your own data.
-
-### Advanced Deliverables
-* **Best Practices**: readability, conciseness, proper naming, and documentation.
-* **JSON Server**: creating, updating, and deleting data hosted by `json-server`.
 
 ### Tips & Tricks
 * JavaScript uses `camelCase` to name variables. Hyphens (`-`) are not allowed, but underscores (`_`) are.
@@ -29,30 +122,4 @@ Welcome to the first phase of your coding journey! In this series, you'll learn 
 * Pass `event` into an event handler when you want to overwrite default handling.
 * Always follow a `fetch("[URL]")` with one or more `.then([callback function])` statements. The first callback function for a `GET` request should convert `response` to a usable data type or structure.
 * If you're ever unsure what data type or structure a `fetch([URL])` will return, try visiting `[URL]` in your browser.
-
-### Grading
-
-We won't use programmatic tests to determine your score. Instead, we'll open up your website and see if we can complete the **user stories** outlined in the challenge's instructions. <ins>You must pass all of a challenge's core deliverables in order to pass the challenge as a whole.</ins> In other words, you can't make up for a core deliverable by partially or wholly passing an advanced deliverable.
-
-That being said, you may have a chance of passing even if you don't quite complete every core deliverable. If I judge you to be near a working solution, I'll have a chat with you where I guide you through the user story or stories that didn't quite work, and you'll get a chance to show that with a little bit of extra direction and time that you do know how to get your code into shape. If that does the trick, you pass!
-
-### Format
-
-The exam is 90 minutes long, with about 15 minutes scheduled before and after to ensure a smooth start and end to the process. We'll schedule a **mock challenge** the day before to go over all exam conditions, and the days leading up to that will be filled with exam-specific review. 
-
-You are only allowed to use your laptop. Do not bring any handwritten notes into the room. You may reference search engines like DuckDuckGo, forums like Stack Overflow, and documentation like Mozilla Developer Network.
-
-Proctors will be visiting desks to ensure that you:
-
-* **do not** reference any materials on or copied from Canvas
-* **do not** reference any tutorials or walkthroughs
-* **do not** reference any code you've written before
-* **do not** reference any notes you've written or typed before
-* **do not** use any artificial intelligence tools, like GitHub Copilot, ChatGPT, Bing, Bard, etc.
-
-Engaging in any of the above or related activities will constitute cheating and/or plaigirism, and will be taken seriously. The code challenge does not just act as a barrier between phases; <ins>it helps us determine whether or not you'll feel comfortable with the increase in difficulty that comes with entering the next phase</ins>.
-
-### Retaking
-
-If you do fail the code challenge, don't fret. You can attempt the exam one more time the following week, i.e. Project Week. Yes, this means that you'll need to study alongside contributing to a project and writing a blog article. However, it doesn't mean you won't find enough time to prepare for a retake. I'll work with you to determine how best to prepare, and how you may be able to lighten your other commitments.
 
