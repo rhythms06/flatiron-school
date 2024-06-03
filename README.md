@@ -2,7 +2,7 @@ Hi! I'm **Sakib Rasul**, an instructor at [Flatiron School](https://flatironscho
 
 If you see something wrong, [you can let me know with a pull request](https://github.com/rhythms06/flatiron-school/compare). Thanks!
 
-_Updated: April 24, 2024_
+_Updated: June 3, 2024_
 
 # [Phase 1: JavaScript](phase-1)
 
