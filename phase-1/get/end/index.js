@@ -35,7 +35,8 @@ fetch("https://dog-api.kinduff.com/api/facts?number=1")
 // We can also pass named functions into .then(), and have successful states passed into them.
 fetch('https://anapioficeandfire.com/api/books')
 .then(response => response.json())
-.then(renderBooks);
+.then(renderBooks)
+.catch(console.error);
 
 function renderBooks(books) {
   books.forEach(book => {
@@ -48,12 +49,17 @@ function renderBooks(books) {
 // If we don't want to run a function that returns a promise right away,
 // we can include it in an **asynchronous** function.
 // In an `async` function, functions that return promises are prepended by `await`.
+// We can also use a try { } catch (error) { } block to handle asynchronous errors.
 async function getPokemon(name) {
-  const response = await fetch("https://pokeapi.co/api/v2/pokemon/" + name);
-  const pokemon = await response.json();
-  console.log(pokemon);
-  document.querySelector("#pokemon").textContent =
-    pokemon.name[0].toUpperCase() + pokemon.name.slice(1) + " (" + pokemon.id + ")";
+  try {
+    const response = await fetch("https://pokeapi.co/api/v2/pokemon/" + name);
+    const pokemon = await response.json();
+    console.log(pokemon);
+    document.querySelector("#pokemon").textContent =
+      pokemon.name[0].toUpperCase() + pokemon.name.slice(1) + " (" + pokemon.id + ")";
+  } catch (error) {
+    console.error(error);
+  }
 }
 getPokemon("ditto");
 
