@@ -1,0 +1,35 @@
+/* 
+    CSS is made up of **rules** that dictate how one or more things should **look**.
+    A **rule** consists a **selector**, a **property**, and a **value**.
+*/
+
+/*
+    A **selector** is an indication of what "thing" we want to apply a style to.
+    `*` serves as the **universal selector**, i.e. indicates that we want to apply
+    a style to every thing, or element, on the page.
+*/
+* {
+    /*
+        The rest of a **rule** is the style itself, denoted with a
+        snake-case **property** like `border-width` and a **value** like 2px.
+        The properties we can set depend on what we want to apply styles to,
+        and the format and range of values depend on the properties they're associated with.
+    */
+    
+    /* For example, the value of `border-width` must be a measurement... */
+    border-width: 2px;
+    /* ...the value of `border-style` must be some permitted style... */
+    border-style: groove;
+    /* ...and the value of `border-color` must be a color. */
+    border-color: cadetblue;
+}
+
+/* Selectors can also be more specific, e.g. by tag name, identifier, or class name. */
+body {
+    background-color: gold;
+}
+
+/* ...and multiple selectors can be joined with commas. */
+h1, time {
+    color: brown;
+}

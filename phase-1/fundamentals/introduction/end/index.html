@@ -61,7 +61,7 @@
       JavaScript (JS) is a language, like HTML, built with a different purpose in mind: adding
       interactivity to webpages. To link some JS to this document, we'll want to:
         (a) Create a new file on our machine with the .js extension, e.g. index.js.
-        (b) Write a <script> element to tell the browser that this document is associated with that file.
+        (b) Write a <script> element in our <head> to associate this document with that file.
       
       A <script> should go in the <head> of an HTML document, since it is inherently non-visual.
       We'll often want to add two attributes to our <script> tags:
@@ -71,7 +71,22 @@
 
       Also note, <script> is a non-void element, so we'll need a closing </script>.
     -->
-  <script defer src="./index.js"></script>
+    <script defer src="./index.js"></script>
+    <!--
+      Cascading Style Sheets (CSS) is yet another language, like HTML and JS, built for yet
+      another purpose: controlling how a webpage **looks**. To link a CSS **stylesheet* to this document,
+      we'll want to:
+          (a) Create a new file on our machine with the .css extension, e.g. styles.css.
+          (b) Write a <link> element in our <head> to associate this document with that file.
+
+      A CSS <link> should go in the <head> of an HTML document, since styles aren't actually
+      printed onto the page (they affect the page, but aren't written onto the page).
+      We'll set the `rel` attribute to "stylesheet" to denote an association to a CSS file,
+      and set the `href` attribute to either an absolute or relative path to the file.
+
+      N.B. <link> is a void element, so it cannot have children.
+    -->
+    <link rel="stylesheet" href="./styles.css" />
   </head>
 
   <!-- The <body> contains as its children a document's visual elements, e.g. text, images, etc. -->

@@ -8,7 +8,7 @@ _Updated: June 3, 2024_
 
 ## [Fundamentals](phase-1/fundamentals)
 - [Introduction](phase-1/fundamentals/introduction)
-_An introduction to variables, types, objects, arrays, conditional statements, functions, and scopes._
+_An introduction to HTML, JS, and CSS._
 - [Scuber](phase-1/fundamentals/scuber)
 _Calculate distances and fares for their hyperlocal ridesharing service._
 
