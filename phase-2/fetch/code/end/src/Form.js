@@ -29,6 +29,6 @@ export default function Form({ submitHandler, id }) {
                    placeholder="$0" min="0" />{` `}
             {/* Form does *not* control this input. */}
             <input type="submit" value="Submit" />
-      </form>
+        </form>
     )
 }
