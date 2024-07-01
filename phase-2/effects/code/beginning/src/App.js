@@ -6,8 +6,9 @@
   By Sakib Rasul
 
   Core Deliverables
-  1. Instead of rendering the local array `articles`, host `../db.json`
-     with JSON Server and fetch articles from there on this component's first render.
+  1. Instead of rendering the local array `articles`, host `../db.json` with JSON Server.
+  2. Implement a button that, when clicked, loads the articles hosted with JSON Server.
+  3. Load the hosted articles on mount (as a result of <App />'s first render).
 
 */
 

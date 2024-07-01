@@ -6,8 +6,9 @@
   By Sakib Rasul
 
   Core Deliverables
-  1. Instead of rendering the local array `articles`, host `../db.json`
-     with JSON Server and fetch articles from there on this component's first render.
+  1. Instead of rendering the local array `articles`, host `../db.json` with JSON Server.
+  2. Implement a button that, when clicked, loads the articles hosted with JSON Server.
+  3. Load the hosted articles on mount (as a result of <App />'s first render).
 
 */
 
@@ -22,10 +23,23 @@ export default function App() {
   // So...let's use state to locally manage our articles!
   const [articles, setArticles] = useState([]);
 
+  // This function fetches articles and injects them into state.
+  function loadArticles() {
+    console.log("Loading...");
+    // Fetch the articles.
+    fetch("http://localhost:3000/articles")
+    .then(response => response.json())
+    .then(articles => {
+      // Update the component's state with the articles,
+      // so that the component re-renders with them as fresh "input".
+      setArticles(articles);
+    });
+  }
+
   // To run `fetch()` on load, we simply:
   // (a) wrap our GET request in an effect, and
   // (b) include an empty dependency array.
-  // Note: You might notice that "Loading..." and "Loaded!" get logged twice,
+  // Note: You might notice that "Loading..." gets logged twice,
   //       and that, more importantly, `fetch()` runs twice.
   //       That's because Strict Mode (on by default in development)
   //       runs every effect twice. React does this to help you notice
@@ -37,15 +51,7 @@ export default function App() {
   //       All of these options work, but I think that (a) is a lot better than (b),
   //       and that (b) is a lot better than (c). Strict Mode exists to help you identify bugs
   //       in development, and it's safest to keep it on. 
-  useEffect(() => {
-    console.log("Loading...");
-    fetch("http://localhost:3000/articles")
-    .then(response => response.json())
-    .then(articles => {
-      setArticles(articles);
-      console.log("Loaded!");
-    })
-  }, []);
+  useEffect(loadArticles, []);
 
   // Here's an example of an effect with a cleanup function.
   // To specify cleanup, just return a second function from the effect's function.
@@ -91,6 +97,8 @@ export default function App() {
                   display: "flex", flexDirection: "column",
                   alignItems: "center", justifyContent: "center" }}>
       <h1>The Flatiron Archives</h1>
+      <button onClick={loadArticles}>Reload Articles</button>
+      <br />
       {articles.map(article => (
         <div key={article.id}>
           <em>{article.title}</em> by {article.author}
