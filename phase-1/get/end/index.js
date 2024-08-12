@@ -1,7 +1,7 @@
 /*
 
 Phase 1 -> GET
-Updated April 25, 2024
+Updated August 12, 2024
 Created May 25, 2023
 by Sakib Rasul
 
@@ -19,7 +19,7 @@ Objectives
 // `fetch` lets us do them on the web, i.e. any dataset we have access to.
 
 // To make a GET request, we call `fetch()` with a URL as a string parameter.
-fetch("https://dog-api.kinduff.com/api/facts?number=1")
+fetch("https://dogapi.dog/api/v2/facts")
 // `fetch()` returns a **promise**, or a guaranteed response.
 // That response may be what we want, or an error.
 // To handle the successful state, we use .then().
@@ -28,7 +28,7 @@ fetch("https://dog-api.kinduff.com/api/facts?number=1")
 .then(response => response.json())
 // .then() returns yet another promise, and here we handle its successful state (a JavaScript object)
 // by manipulating the DOM.
-.then(data => document.querySelector("#dog").textContent = data.facts[0])
+.then(data => document.querySelector("#dog").textContent = data.data[0].attributes.body)
 // We can use .catch() to handle errors.
 .catch(error => document.querySelector("#dog").textContent = error);
 
