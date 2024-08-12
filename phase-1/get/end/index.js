@@ -6,7 +6,18 @@ Created May 25, 2023
 by Sakib Rasul
 
 Objectives
-1. Make a GET request to an external API.
+1. Make a `GET` request to an external API for a specific item.
+2. Make a `GET` request to an external API for a list of items.
+3. Write a function that makes a `GET` request to an external API.
+
+Takeaways
+1. `fetch` is a function that lets you write API **requests**.
+2. A `GET` request is a request to perform the READ operation on a dataset.
+3. `fetch` returns a **promise**, a process that **resolves** into either
+    a successful **response** or an unsuccessful **error**.
+4. We can use the methods `.then()` and `.catch()` to handle each case.
+5. We can use the keywords `async`, `try`, `await`, and `catch` to
+    incorporate `fetch` calls into functions.
 
 */
 
@@ -35,10 +46,13 @@ fetch("https://dogapi.dog/api/v2/facts")
 // We can also pass named functions into .then(), and have successful states passed into them.
 fetch('https://anapioficeandfire.com/api/books')
 .then(response => response.json())
+// This line says: Take the converted response, call it `books`, and call `renderBooks(books)`.
 .then(renderBooks)
 .catch(console.error);
 
 function renderBooks(books) {
+  // Since this `GET` request represents an array of books,
+  // we'll have to treat `books` as just that, an array.
   books.forEach(book => {
     const li = document.createElement("li");
     li.textContent = book.name;

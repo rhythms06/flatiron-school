@@ -6,7 +6,9 @@ Created May 25, 2023
 by Sakib Rasul
 
 Objectives
-1. Make a GET request to an external API.
+1. Make a `GET` request to an external API for a specific item.
+2. Make a `GET` request to an external API for a list of items.
+3. Write a function that makes a `GET` request to an external API.
 
 */
 
@@ -14,6 +16,6 @@ Objectives
 
 // A synchronous request to https://anapioficeandfire.com/api/books.
 
-// An asynchronous request to https://pokeapi.co/api/v2/pokemon/[name]"
+// An asynchronous request to https://pokeapi.co/api/v2/pokemon/[name].
 
 // ~ Challenge: Make a GET request to an API of your choice!
