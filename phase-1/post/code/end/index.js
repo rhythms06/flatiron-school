@@ -1,14 +1,14 @@
 /*
 
 Phase 1 -> Creating data with JSON Server and POST requests
-Updated March 15, 2024
+Updated August 13, 2024
 Created May 26, 2023
 by Sakib Rasul
 
 Objectives
 1. Run an instance of JSON Server that hosts a dataset.
-1. Make a GET request to display a dataset.
-2. Make a POST request to add to that dataset.
+2. Make a GET request to display a dataset.
+3. Make a POST request to add to that dataset.
 
 */
 
@@ -25,9 +25,12 @@ Objectives
 //    See `./db.json` for an example representing dogs, cats, humans,
 //    robots, cities, and colors!
 // 3. Run `json-server [path to db.json]` to host `db.json`.
+// Note: If you're using Live Server, add "**/db.json" to its list of
+//       ignored files, so that your webpage only reloads when changes
+//       are made to your frontend (i.e. `index.[html | js]`).
 // ...and we're ready to go!
 
-// Let's try making a GET request to display the existing `colors` on the page.
+// Let's write a GET request to retrieve and display our saved colors.
 fetch("http://localhost:3000/colors")
 .then(response => response.json())
 .then(colors => {
@@ -37,13 +40,13 @@ fetch("http://localhost:3000/colors")
         // Create, modify, and append to the DOM
         // 1. Create an empty <li> in the ether
         const colorLi = document.createElement("li");
-        // 2. Modify the <li> with some text, e.g. <li>1. green (forest)</li>, via...
+        // 2. Modify the <li>, e.g. <li>1. green (forest)</li>, via...
         //    a. ...concatenation...
         // colorLi.textContent = color.name + " (" + color.shade + ")";
-        //    b. ...or interpolation...
+        //    b. ...or interpolation.
         colorLi.textContent = `${color.name} (${color.shade})`;
-        // 3. Append the <li> as a child to some existing element in the DOM
-        //    i.e., `[parent].append([child])`.
+        // 3. Append the <li> as a child to some existing element
+        //    in the DOM, i.e., `[parent].append([child])`.
         colorList.append(colorLi);
     });
 })
@@ -51,10 +54,10 @@ fetch("http://localhost:3000/colors")
 
 // Now, let's trigger a POST request when the user submits the form,
 // so that they can add a color!
-// Let's plan out our event listener:
+//
 // The event's target: "#newColorForm"
 // The event: "submit"
-// What we want to do when the event fires: POST a color to `db.json`.
+// The event's handler: `POST` a color to `db.json`.
 // ...in sum, when the form fires the event "submit", make a POST request!
 document.querySelector("#newColorForm").addEventListener("submit", event => {
     // Let's use `event` to prevent its default handler.

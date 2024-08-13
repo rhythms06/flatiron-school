@@ -1,14 +1,14 @@
 /*
 
 Phase 1 -> Creating data with JSON Server and POST requests
-Updated March 15, 2024
+Updated August 13, 2024
 Created May 26, 2023
 by Sakib Rasul
 
 Objectives
 1. Run an instance of JSON Server that hosts a dataset.
-1. Make a GET request to display a dataset.
-2. Make a POST request to add to that dataset.
+2. Make a GET request to display a dataset.
+3. Make a POST request to add to that dataset.
 
 */
 
@@ -20,7 +20,7 @@ Objectives
 
 
 // ~ Challenges
-// 1. There are a handful of awfully similar lines in our requests. Try abstracting them
-//    into a function!
+// 1. There are a handful of awfully similar lines in our requests.
+//    Try abstracting them into a function!
 // 2. Try writing your own POST request.
 // 3. Try writing PATCH and DELETE requests!
