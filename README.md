@@ -1,8 +1,8 @@
-Hi! I'm **Sakib Rasul**, an instructor at [Flatiron School](https://flatironschool.com). Here are some of my notes on software engineering.
+Hi! I'm **Sakib Rasul**, an instructor at [Flatiron School](https://flatironschool.com). This repository consists of a series of lectures (videos, problems, and code) concerning some of the major pillars of full-stack development. They are grouped into _phases_, as outlined below. If you're not sure where to start, [click here](phase-1)!
 
-If you see something wrong, [you can let me know with a pull request](https://github.com/rhythms06/flatiron-school/compare). Thanks!
+_Note:_ If you see something that could be improved, [you can let me know with a pull request](https://github.com/rhythms06/flatiron-school/compare). Thanks!
 
-_Updated: August 5, 2024_
+_Updated: August 13, 2024_
 
 # [Phase 1: JavaScript](phase-1)
 
