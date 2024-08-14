@@ -1,6 +1,27 @@
 # Phase 1
 
-Welcome to the first phase of your coding journey! In this series, you'll learn about **the fundamentals of HTML and JavaScript**, **DOM manipulation**, **DOM events**, and **databases**. 
+Welcome to the first phase of your coding journey! In this series, you'll learn about **the fundamentals of HTML and JavaScript**, **DOM manipulation**, **DOM events**, **GET requests** and **POST requests**.
+
+## Topics
+* **Fundamentals**: linking JavaScript to HTML, deferring scripts, variables, types, functions, arrays, objects, conditional statements, and local and global scope.
+* **DOM Manipulation**: the `document` interface, selecting existing elements, creating new elements, appending elements to the DOM, modifying elements, and removing elements from the DOM.
+* **DOM Events**: event listeners and handlers, preventing default handlers, manipulating the DOM when events occur
+* **`GET`**: retrieving data with `fetch(URL)`, parsing JSON with `response.json()`, and handling received objects and arrays.
+* **`PATCH`**: creating a local API with `json-server` and sending data to it with `POST` requests.
+
+## Common Hiccups
+* JavaScript uses `camelCase` to name variables. Hyphens (`-`) are not allowed, but underscores (`_`) are.
+* `function [name]([parameters]) { [code] }` is equivalent to `const [name] = ([parameters]) => { [code] }`.
+* To iterate over an array, use `[array].forEach([callback function])`.
+* To map an array's values to a new array, use `[array].map([callback function])`.
+* To access an object's values, use `object.propertyName` or `object["propertyName"]`. This also works for accessing a form's input elements with `event.target`.
+* A function's parameters and body constitute one local scope.
+* Variables initialized in a local scope are not accessible in other local scopes, nor in the global scope.
+* Variables initialized in the global scope are accessible in all local scopes.
+* `querySelector()` takes as input a CSS selector, e.g. `"#[id]"`, `".[class]"`, and `"[tag]"`. 
+* Pass `event` into an event handler when you want to overwrite default handling.
+* Always follow a `fetch("[URL]")` with one or more `.then([callback function])` statements. The first callback function for a `GET` request should convert `response` to a usable data type or structure.
+* If you're ever unsure what data type or structure a `fetch([URL])` will return, try visiting `[URL]` in your browser.
 
 ## A Guide to Getting Git
 
@@ -98,28 +119,55 @@ To resolve a file marked as `deleted`:
 2. To keep the file and mark the conflict as resolved, [stage it](#staging-committing-and-pushing-to-a-repository).
 3. To remove the file and mark the conflict as resolved, run `git rm [path to file]`.
 
+## Readings
+*This section serves as a guide to prospective and current students at Flatiron School. Otherwise, it might not make much sense.*
+
+The readings on Canvas exist to supplement your understanding of the phase's materials. You should in no way feel obliged to complete every reading. Instead, refer to them when you feel lost on a concept that comes up during lecture, or on a lab or quiz.
+
+## Quizzes and Labs
+*This section serves as a guide to prospective and current students at Flatiron School. Otherwise, it might not make much sense.*
+
+Required quizzes and labs are worth a very small percentage of your grade, so view them as checkpoints of understanding, rather than as forms of assessment. You can take quizzes and labs multiple times, so consider making your first attempt as soon as we complete the relevant lecture(s). You might not understand everything on the first go, but you'll get a sense of where your strengths lie, and where you might need to build some understanding. Plan on completing all _required_ quizzes and labs by the end of Week 2 of a phase, and work on _optional_ labs and quizzes as you see fit for additional checkpoints of understanding.
+
+## The Code Challenge
+*This section serves as a guide to prospective and current students at Flatiron School. Otherwise, it might not make much sense.*
+
+You'll be assigned a _code challenge_ during Week 2 of each phase, in which you'll complete a small project that touches on most of the major concepts in a phase. Code challenges are designed to take only a couple of hours to complete, and represent a significant portion of your grade.
+
+## The Blog
+*This section serves as a guide to prospective and current students at Flatiron School. Otherwise, it might not make much sense.*
+
+You'll be asked to write a blog post by the end of each phase. This post should concern something technical (e.g. highlights from a phase, a programming concept, a library, etc.) and be published online. Use it as an opportunity to reflect on what you're learning, and practice putting your experience into words.
+
+## The Project
+*This section serves as a guide to prospective and current students at Flatiron School. Otherwise, it might not make much sense.*
+
+You'll be tasked with creating and presenting a project (by yourself or with a group) by the end of each phase. The project is an opportunity for you to apply a phase's concepts to a problem that interests you. Plan on pitching a project outline by the end of Week 2, and presenting your project by the end of Week 3 of a phase.
+
+### Presentations
+
+Presentations are stellar opportunities to gain recognition for your efforts, practice your communication skills, and receive friendly feedback on your work. In presenting a project, consider completing some or all of the following steps:
+
+1. Introduce yourself, your partner(s), and your affiliation(s).
+2. Recount the story and context of your project.
+3. Demonstrate a typical user(s) experience.
+4. Highlight difficulties, successes, and next steps.
+5. Take feedback and questions.
+
+_Tip:_ Steps 2, 3, 4, and 5 are all opportunities to tailor your presentation to your audience.
 
 ## The Assessment
-*This section can serve as a guide if you're a prospective or current student at Flatiron School. Otherwise, it won't make much sense.*
+*This section serves as a guide to prospective and current students at Flatiron School. Otherwise, it might not make much sense.*
+
+Assessments take place towards the end of Week 2 and the start of Week 3 of a phase. They are one-on-one, 15-minute mock technical interviews that challenge you to understand concepts and complete problems covered in lecture. You'll be graded both conceptually (e.g. your ability to communicate concepts through analogies and use cases) and technically (e.g. your ability to write code and recall terminology) on each topic. Assessments can be repeated once, if needed to pass a phase.
+
+_Tip:_ For the sake of time, keep your answers straightforward and to the point; moreover, if you don't know the answer to a question, just say you don't know. If there's time left over after visiting all of an assessment's topics, we'll revisit areas you didn't do so well in on your first try.
 
 ### Topics
-* **Fundamentals**: linking JavaScript to HTML, deferring scripts, variables, types, functions, arrays, objects, conditional statements, and local and global scope.
-* **DOM Manipulation**: the `document` interface, selecting existing elements, creating new elements, appending elements to the DOM, modifying elements, and removing elements from the DOM.
-* **DOM Events**: event listeners and handlers, preventing default handlers, manipulating the DOM when events occur
-* **`GET`**: retrieving data with `fetch(URL)`, parsing JSON with `response.json()`, and handling received objects and arrays.
-* **JSON Server**: creating a local API with `json-server` and running `fetch(URL)` requests on your own data.
+* **Variables**: declaration, initialization, assignment, types, etc.
+* **Structures**: arrays, objects, usage, access, modification, etc.
+* **Functions**: definition, usage, arrow functions, callback functions, etc.
+* **Scope**: global and local scope.
+* **Fetch**: APIs, CRUD, requests, promises, `.then()`, `.catch()`, etc.
 
-### Tips & Tricks
-* JavaScript uses `camelCase` to name variables. Hyphens (`-`) are not allowed, but underscores (`_`) are.
-* `function [name]([parameters]) { [code] }` is equivalent to `const [name] = ([parameters]) => { [code] }`.
-* To iterate over an array, use `[array].forEach([callback function])`.
-* To map an array's values to a new array, use `[array].map([callback function])`.
-* To access an object's values, use `object.propertyName` or `object["propertyName"]`. This also works for accessing a form's input elements with `event.target`.
-* A function's parameters and body constitute one local scope.
-* Variables initialized in a local scope are not accessible in other local scopes, nor in the global scope.
-* Variables initialized in the global scope are accessible in all local scopes.
-* `querySelector()` takes as input a CSS selector, e.g. `"#[id]"`, `".[class]"`, and `"[tag]"`. 
-* Pass `event` into an event handler when you want to overwrite default handling.
-* Always follow a `fetch("[URL]")` with one or more `.then([callback function])` statements. The first callback function for a `GET` request should convert `response` to a usable data type or structure.
-* If you're ever unsure what data type or structure a `fetch([URL])` will return, try visiting `[URL]` in your browser.
-
+_Note:_ Though the top-level list of topics is exhaustive, the subtopics are not. The assessment will not test your ability to (a) design and build a frontend, (b) manipulate the DOM, (c) handle events, or (d) write asynchronous CRUD requests. The assessment will also not test anything not covered in class.
