@@ -46,7 +46,7 @@ _Create a storefront for Calexico with the help of `GET` requests, `PATCH` reque
 - [Toy Tale](phase-1/challenges/toys)
 _Help Andy manage his toys with `GET`, `POST`, `PATCH`, and `DELETE` requests!_
 
-# Phase 2: React
+# [Phase 2: React](phase-2)
 
 ## [Fundamentals](phase-2/fundamentals)
 _Use build tools to get started in React without a framework._
