@@ -104,4 +104,4 @@ _Create a database of planets with the help of React!_
 # [Phase 3: Python](phase-3)
 
 ## [Fundamentals](phase-3/fundamentals)
-An introduction to the world of Python.
+_An introduction to the world of Python._
