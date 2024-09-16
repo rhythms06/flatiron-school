@@ -100,3 +100,8 @@ _Browse and add to my tea collection with the help of components, props, state, 
 _Create a database of punny store names, with the help of `GET`, `POST`, `PATCH`, `DELETE`, events, and manipulation._
 - [Planetary Registry](phase-2/challenges/planets)
 _Create a database of planets with the help of React!_
+
+# [Phase 3: Python](phase-3)
+
+## [Fundamentals](phase-3/fundamentals)
+An introduction to the world of Python.
