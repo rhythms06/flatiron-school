@@ -1,8 +1,8 @@
 # Classes
 # by Sakib Rasul
 
-# A **class** is a way of bundling data and functionality into a new **type** of object.
-# More generally, this process is known as **object-oriented programming**.
+# A **class** (written in `PascalCase`) is a way of bundling data and functionality
+# into a new **type** of object. This process is known as **object-oriented programming**.
 
 # Here, we're creating a class called `Phone`, so that we can create new objects of type `Phone`.
 # When we do, we'll call those new objects **instances** of the class `Phone`.
