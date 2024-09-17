@@ -23,29 +23,29 @@
 # Import a class.
 from modules.phone import Phone
 
-# Call `__init__`.
+# Create a new instance of the class `Phone`, i.e. call the `__init__` method in `Phone`.
 iPhone = Phone("Apple", "iPhone", "16 Pro", "Play Store")
 
-# Call `__repr__`.
+# Convert our instance into a string, i.e. call the `__repr__` method in `Phone`.
 print(iPhone)
 
-# Access a data attribute.
+# Access an instance data attribute.
 print(iPhone.store)
 
-# Modify a data attribute.
+# Modify an instance data attribute.
 iPhone.store = "App Store"
 
-# Access a data attribute.
+# Access an instance data attribute.
 print(iPhone.store)
 
-# Set a property.
-iPhone.remaining_battery = 11
+# Set an instance property.
+iPhone.remaining_battery = 5
 
-# Get a property.
+# Get an instance property.
 print(iPhone.remaining_battery)
 
 # Call an instance method.
 iPhone.download("FiLR")
 
-# Get a property.
+# Get an instance property.
 print(iPhone.remaining_battery)
