@@ -7,3 +7,6 @@ node_modules
 # parcel
 .parcel-cache
 dist
+
+# Python
+__pycache__
