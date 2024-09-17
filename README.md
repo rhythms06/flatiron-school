@@ -105,3 +105,6 @@ _Create a database of planets with the help of React!_
 
 ## [Fundamentals](phase-3/fundamentals)
 _An introduction to the world of Python._
+
+## [Classes](phase-3/classes)
+_An introduction to object-oriented programming, classes, attribute references, and properties._
