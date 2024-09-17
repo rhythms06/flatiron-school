@@ -39,7 +39,7 @@ iPhone.store = "App Store"
 print(iPhone.store)
 
 # Set an instance property.
-iPhone.remaining_battery = 5
+iPhone.remaining_battery = 92
 
 # Get an instance property.
 print(iPhone.remaining_battery)
