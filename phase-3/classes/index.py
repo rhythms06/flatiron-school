@@ -2,10 +2,10 @@
 # by Sakib Rasul
 
 
-# In Python, definitions and statements in a `.py` file can be shared with other files
-# when we treat that file as a **module**.
+# In Python, definitions and statements in a `.py` file (a.k.a. **module**)
+# can be shared with other modules by using the keywords `from`, `import`, and `as`.
 
-# In this example, we want to treat `modules/phone.py` as a module.
+# In this example, we want to import things from the file `modules/phone.py`.
 # There are various ways we can go about doing that:
 # 1. `import modules.phone` gives us access to things via `modules.phone.[thing]`
 # 2. `from modules import phone` gives us access to things via `phone.[thing]`
@@ -16,11 +16,11 @@
 # "Giving ourselves access to a thing" is more formally known as populating the **namespace**.
 # In other words, importing a module augments our namespace with additional definitions and statements.
 
-# When we start treating a file as a module, i.e. importing things from it into other files,
-# Python automatically starts managing a cache of that module, in a folder named `__pycache__`.
-# This is a completely automated process that speeds up the task of loading a module.
+# When we start importing modules from a folder, Python automatically starts managing a cache by
+# creating a new folder within that folder called `__pycache__`. This is a completely automated process
+# that speeds up the task of loading modules.
 
-# Import a class.
+# Import a class from another module.
 from modules.phone import Phone
 
 # Create a new instance of the class `Phone`, i.e. call the `__init__` method in `Phone`.
