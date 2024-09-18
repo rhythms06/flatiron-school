@@ -71,19 +71,32 @@ class Phone:
     # for functions that return other functions.
 
     # The `@property` decorator lets us define the getter of a data attribute,
-    # i.e. what happens when you try to access that attribute in an instance.
+    # i.e. what happens when one tries to access that attribute in an instance,
+    # i.e. what happens when one writes `[instance].[data_attribute]`.
+
+    # When someone writes `[instance].remaining_battery` outside of this class...
     @property
     def remaining_battery(self):
-        # Optionally, we can provide a docstring before the getter.
+        # (Optionally, we can provide a docstring before the getter.)
         """Display the current battery."""
+        # ...return the following string.
         return f"You have {self._remaining_battery}% remaining."
     
-    # The `@[x].setter` decorator lets us define the setter of a data attribute,
-    # i.e. what happens when one tries to assign a value to that attribute.
+    # The `@[x].setter` decorator lets us define the setter of a data attribute [x],
+    # i.e. what happens when one tries to assign a value to that attribute,
+    # i.e. what happens when one writes `[instance].[data_atttribute] = [value]`.
+    # The second parameter of a setter is the new intended value, e.g. `[value]` above.
+
+    # When someone writes `[instance].remaining_battery = [new_percentage]`...
     @remaining_battery.setter
     def remaining_battery(self, percentage):
+        # ...print this string...
+        print(f"Changing the battery level...")
+        # ...and change the data attribute `_remaining_battery`
+        #    if given an integer between 1 and 100,
         if type(percentage) == int and 1 <= percentage <= 100:
             self._remaining_battery = percentage
+        #    or an error, otherwise.
         else:
             raise TypeError("Expected an integer between 1 and 100.")
         

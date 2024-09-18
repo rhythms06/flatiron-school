@@ -38,14 +38,18 @@ iPhone.store = "App Store"
 # Access an instance data attribute.
 print(iPhone.store)
 
-# Set an instance property.
+# We can modify instance properties just like we modify data attributes.
+# The difference is that modifying a property invokes a custom setter method,
+# e.g. `@remaining_battery.setter remaining_battery()` in `Phone`.
 iPhone.remaining_battery = 92
 
-# Get an instance property.
+# We can access instance properties just like we access data attributes.
+# The difference is that accessing a property invokes a custom getter method,
+# e.g. `@property remaining_battery()` in `Phone`.
 print(iPhone.remaining_battery)
 
 # Call an instance method.
 iPhone.download("FiLR")
 
-# Get an instance property.
+# Downloading an application successfully should result in a change in battery.
 print(iPhone.remaining_battery)
