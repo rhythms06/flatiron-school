@@ -35,14 +35,14 @@ calamarata = Pasta("calamarata", "short", "Naples")
 # It can be accessed from the class `Pasta`...
 print(Pasta.all_pastas)
 # ...or, less intuitively, any instance of `Pasta`.
-print(busiate.all_pastas)
+# print(busiate.all_pastas)
 
 # The **class method** `number_of_pastas`
 # returns the number of instances of `Pasta`.
 # It can be accessed from the class `Pasta`...
 print(Pasta.number_of_pastas())
 # ...or, less intuitively, any instance of `Pasta`.
-print(fedelini.number_of_pastas())
+# print(fedelini.number_of_pastas())
 
 # The **class method** `most_prolific_origin`
 # returns the most frequently observed `origin` amongst `all_pastas`.
