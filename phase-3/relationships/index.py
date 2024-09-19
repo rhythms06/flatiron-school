@@ -2,7 +2,7 @@
 # by Sakib Rasul
 
 from models.garage import Garage, Car
-from models.hotel import Hotel, Guest, Booking
+from models.hotel import Hotel, Guest
 
 # ~ One-to-Many Relationships
 # A garage can have many cars,
@@ -31,10 +31,10 @@ new_yorker = Hotel("Wyndham", "New Yorker")
 sakib = Guest("Sakib")
 hannah = Guest("Hannah")
 
-sakib_at_cardiff = Booking(sakib, cardiff, 3)
-hannah_at_cardiff = Booking(hannah, cardiff, 5)
-sakib_at_new_yorker = Booking(sakib, new_yorker, 2)
-hannah_at_new_yorker = Booking(hannah, new_yorker, 6)
+sakib.book(cardiff, 3)
+hannah.book(cardiff, 5)
+sakib.book(new_yorker, 2)
+hannah.book(new_yorker, 6)
 
 print("~~CARDIFF~~")
 for booking in cardiff.bookings: print(booking)

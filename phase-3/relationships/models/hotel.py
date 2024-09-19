@@ -16,7 +16,10 @@ class Guest:
 
     def __repr__(self):
         return self.name
-    
+
+    def book(self, hotel, nights):
+        return Booking(self, hotel, nights)
+
     @property
     def bookings(self):
         return [booking for booking in Booking.all_bookings if booking.guest == self]
