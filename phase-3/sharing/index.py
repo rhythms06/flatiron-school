@@ -47,3 +47,7 @@ print(Pasta.number_of_pastas())
 # The **class method** `most_prolific_origin`
 # returns the most frequently observed `origin` amongst `all_pastas`.
 print(f"{Pasta.most_prolific_region()} is great at making pasta.")
+
+# ~ Challenges
+# 1. Print "[pasta.type] is from [pasta.origin]!" to the console
+#    for each instance `pasta`.
