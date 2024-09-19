@@ -111,3 +111,6 @@ _An introduction to object-oriented programming, classes, attribute references, 
 
 ## [Inheritance](phase-3/inheritance)
 _All dogs are pets, but not all pets are dogs._
+
+## [Sharing](phase-3/sharing)
+_True enlightenment comes from knowing all your pastas._
