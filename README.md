@@ -106,13 +106,13 @@ _Create a database of planets with the help of React!_
 ## [Fundamentals](phase-3/fundamentals)
 _An introduction to the world of Python._
 
-## [Classes](phase-3/classes)
+## [Instances](phase-3/instances)
 _An introduction to object-oriented programming, classes, attribute references, and properties._
 
 ## [Inheritance](phase-3/inheritance)
 _All dogs are pets, but not all pets are dogs._
 
-## [Sharing](phase-3/sharing)
+## [Classes](phase-3/classes)
 _True enlightenment comes from knowing all your pastas._
 
 ## [Relationships](phase-3/relationships)
