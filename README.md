@@ -117,3 +117,9 @@ _True enlightenment comes from knowing all your pastas._
 
 ## [Relationships](phase-3/relationships)
 _One can have many._
+
+## [SQL](phase-3/sql)
+_Using tables, rows, and columns to represent data._
+
+## [Object-Relational Mappings](phase-3/orms)
+_Mapping classes, instances, and data attributes to tables, rows, and columns._
