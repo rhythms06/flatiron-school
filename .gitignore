@@ -10,3 +10,6 @@ dist
 
 # Python
 __pycache__
+
+# SQLite
+*.db
