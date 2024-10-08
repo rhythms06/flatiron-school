@@ -131,3 +131,6 @@ _Let people run and interact with your Python apps!_
 
 ## [Fundamentals](phase-4/fundamentals)
 _An introduction to Flask, SQLAlchemy, and Alembic._
+
+## [Routing](phase-4/routing)
+_Writing CRUD requests in Flask and SQLAlchemy._
