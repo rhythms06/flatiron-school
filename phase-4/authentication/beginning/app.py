@@ -122,12 +122,15 @@ def create_user():
 def login():
     # Get the user's proposed credentials.
     data = request.json
-    user = User.query.where(User.username == data["username"]).first()
     # Lookup those credentials in the database.
+    user = User.query.filter_by(username=data["username"]).first()
     # Check if the row exists *AND* if the given password is correct.
     if user and user.authenticate(data["password"]):
         # We can "log in" the user by
         # saving their `id` into a session cookie.
+        # Note that this is a very simple form of authentication.
+        # For a more secure approach, consider tools like
+        # Flask-Login and JWT tokens.
         session["user_id"] = user.id
         return jsonify(user.to_dict()), 201
         # ...or return make_response(jsonify(user.to_dict()), 201)
@@ -142,7 +145,7 @@ def get_current_user():
     # the cookie named "user_id".
     user_id = session.get("user_id")
     if user_id:
-        user = User.query.where(User.id == user_id).first()
+        user = User.query.get(user_id)
         # This line should break the route, since it tries
         # to read forbidden property, a user's plaintext password.
         # print(user.password)
@@ -151,15 +154,18 @@ def get_current_user():
     else:
         # The response status code 401 is short for "no content",
         # i.e. no one is logged in.
-        return jsonify({}), 204
-    
+        return "", 204
+        # ...or return make_response("", 204)
+
 @app.delete("/logout")
 def logout():
-    session.pop("user_id")
+    # Remove or clear the cookie "user_id" from the session.
+    # If it doesn't exist, return the default value `None`.
+    session.pop("user_id", None)
     # The response status code 401 is short for "no content",
     # i.e. no one is logged in.
-    return jsonify({ }), 204
-
+    return "", 204
+    # ...or return make_response("", 204)
 
 # (Optional) Refactoring with Flask-RESTful
 # If we have a class inherit from `Resource`,
